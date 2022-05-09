@@ -1,4 +1,3 @@
-something
 --------------------- find -------------------------
 find * | grep {filename}							finding a file in any subdirectories from current location
 fd {filename} .													finding a file in any subdirectories from current location. Can use {path} instead of .
