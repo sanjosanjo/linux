@@ -1,5 +1,5 @@
 --------------------- find -------------------------
-find * | grep {filename}										finding a file in any subdirectories from current location
+find * | grep {filename}							finding a file in any subdirectories from current location
 fd {filename} .													finding a file in any subdirectories from current location. Can use {path} instead of .
 find . -type f -name '*.m' -exec ls -l \{\} \;					find all .m files in an subdirectories  (the -exec part gives more details information)
 find . -name '*.m' | xargs grep xxx								look for the string "xxx" in all .m files in the current directory structure (recursive)
@@ -90,7 +90,7 @@ time cp {filename}						how long to execute the copy command
 chase {filename}						to change the file name to all lower case
 chase */*/*								to change all filenames in current & sub-directories
 dos {filename}							remove <cr> if present, adds <cr> if not present
-diff									compare two files, terminal mode
+diff							compare two files, terminal mode
 
 rsync -a --delete --exclude='*.ds' matlab /scratch	archive the matlab directory into /scratch directory (deleting things in the archive that have been deleted in the original)
 
