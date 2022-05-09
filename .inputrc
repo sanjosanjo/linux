@@ -1,0 +1,10 @@
+# You could configure this in /etc/inputrc
+# If you want to leave /etc/inputrc as default, use this:
+
+# Respect default shortcuts.
+$include /etc/inputrc
+
+# ## arrow up
+"\e[A":history-search-backward
+# ## arrow down
+"\e[B":history-search-forward
