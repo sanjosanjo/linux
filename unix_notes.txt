@@ -1,3 +1,4 @@
+something
 --------------------- find -------------------------
 find * | grep {filename}							finding a file in any subdirectories from current location
 fd {filename} .													finding a file in any subdirectories from current location. Can use {path} instead of .
@@ -22,6 +23,7 @@ find . -type f -mtime -33 -a -mtime +21 -printf "%t\t%p\n"							find file modif
 locate -d ~/.u.db "$PWD*/*.m"									use locate to find all .m files from current location
 updatedb -l 0 -o ~/.u.db -U /mnt/u								update the locate database named .u.db with the contents of /mnt/u
 locate -d ~/.u.db "$PWD*/*.m" | xargs -d "\n" ls -l				use locate and give detailed information, need to use xargs -d "\n" to handle files with spaces
+
 
 --------------------- grep  -------------------------
 grep {string} filename											look for 'term' in a single file
