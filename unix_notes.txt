@@ -23,7 +23,6 @@ locate -d ~/.u.db "$PWD*/*.m"									use locate to find all .m files from curre
 updatedb -l 0 -o ~/.u.db -U /mnt/u								update the locate database named .u.db with the contents of /mnt/u
 locate -d ~/.u.db "$PWD*/*.m" | xargs -d "\n" ls -l				use locate and give detailed information, need to use xargs -d "\n" to handle files with spaces
 
-
 --------------------- grep  -------------------------
 grep {string} filename											look for 'term' in a single file
 grep -nr {string} *												look recursively in files and list name/line of occurence (but not files in current directory)
