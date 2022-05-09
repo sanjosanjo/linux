@@ -13,11 +13,12 @@ export HISTSIZE=10000
 export HISTFILE=~/.history
 export HISTIGNORE="&:ls:ll:l:lt:la:h:pwd:exit:pss:cd:..:history*"
 #export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-#export PROMPT_COMMAND="history -a; history -c; history -r;$PROMPT_COMMAND"
-export PROMPT_COMMAND="history -a; history -c; history -r"
+export PROMPT_COMMAND="history -a; history -c; history -r;$PROMPT_COMMAND"
+#export PROMPT_COMMAND="history -a; history -c; history -r"
 export HISTCONTROL=ignoredups:erasedups:ignorespace
 export INPUTRC=~/.inputrc
 
+alias sudo='sudo '
 alias listen='sudo lsof -i -P | grep -i "listen"'
 alias ls='ls -F --color=auto'
 alias l='ls -hlF --color=auto'
@@ -30,6 +31,7 @@ alias duh2='du -h -d 2 | sort -h'
 alias d='df -h'
 alias h='history'
 alias hh='history 50'
+alias grep='grep --color '
 alias hgrep='history | grep '
 alias ver='dmesg | grep -i available;lsb_release -a'
 alias pdrive='cd /mnt/p/MSI/BUSINESS/Development\ Engineering/Kiran_Section/ak/'
@@ -44,8 +46,9 @@ alias shelltype='echo $0'
 alias ta='tmux new -A -s andy'
 #alias pstree1='pstree -aplh'
 alias mountall='sudo mount -t drvfs P: /mnt/p; sudo mount -t drvfs H: /mnt/h; sudo mount -t drvfs U: /mnt/u'
-alias grep='grep --color '
-#export PATH="/tools/start:$HOME/myapps/bin:/apps/mathworks/matlab/R2015a/bin:$PATH"
 
+alias ncdux='ncdu --exclude='/var/www/html/drivemusic/*''
+alias dux='du --exclude='/var/www/html/drivemusic/*''
+alias serv='systemctl list-unit-files --type service -all'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
