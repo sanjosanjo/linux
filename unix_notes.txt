@@ -109,3 +109,6 @@ vncserver :67 -geometry 1280x965
 vncserver -kill :67
 lmstat -f MATLAB -c 1730@flex1			check MATLAB licenses
 
+-------- vi --------------
+v	visual mode
+
