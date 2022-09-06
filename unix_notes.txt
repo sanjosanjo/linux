@@ -1,5 +1,4 @@
 --------------------- find -------------------------
-test
 find * | grep {filename}							finding a file in any subdirectories from current location
 fd {filename} .													finding a file in any subdirectories from current location. Can use {path} instead of .
 find . -type f -name '*.m' -exec ls -l \{\} \;					find all .m files in an subdirectories  (the -exec part gives more details information)
@@ -23,6 +22,8 @@ find . -type f -mtime -33 -a -mtime +21 -printf "%t\t%p\n"							find file modif
 locate -d ~/.u.db "$PWD*/*.m"									use locate to find all .m files from current location
 updatedb -l 0 -o ~/.u.db -U /mnt/u								update the locate database named .u.db with the contents of /mnt/u
 locate -d ~/.u.db "$PWD*/*.m" | xargs -d "\n" ls -l				use locate and give detailed information, need to use xargs -d "\n" to handle files with spaces
+awk '{print $1}'												print the first item in a space-delimited string, with newline
+awk '{printf "%s", $1}'											print the first item in a space-delimited string, without newline
 
 --------------------- grep  -------------------------
 grep {string} filename											look for 'term' in a single file
@@ -108,9 +109,6 @@ pscp root@169.254.185.150:/usr/loca/local/bin/* u:\work\
 
 vncserver :67 -geometry 1280x965
 vncserver -kill :67
-lmstat -f MATLAB -c 1730@flex1			check MATLAB licenses
 
 -------- vi --------------
 v	visual mode
-
-
