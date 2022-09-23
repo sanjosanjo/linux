@@ -4,7 +4,8 @@ fd {filename} .													finding a file in any subdirectories from current lo
 find . -type f -name '*.m' -exec ls -l \{\} \;					find all .m files in an subdirectories  (the -exec part gives more details information)
 find . -name '*.m' | xargs grep xxx								look for the string "xxx" in all .m files in the current directory structure (recursive)
 find . -name '*.dds' -exec grep xxx /dev/null \{\} \;	
-find {path} -mtime -1 -type f									find all files modified within the last day.  You can use . for the local directory instead of {path}
+find {path} -type f -mtime -1 									find all files modified within the last day.  You can use . for the local directory instead of {path}
+find {path} -type f -newermt 2017-02-01                         find all files modified since this date.  You can use . for the local directory instead of {path}
 fd . {path} --changed-within 1d									find all files modified within the last day.  You can leave out {path} for local directory
 find . -name '*.dds' -exec grep what /dev/null \{\} \;
 find . -not -name '*.xlsx' -not -name '*.xls'					find all files without these suffixes
@@ -15,6 +16,7 @@ find . -type f -maxdepth 1 | fgrep -v makefile | xargs rm		find and remove all f
 find . -type f -name '*.m3d' -delete							find and delete all files ending with this (handles files with spaces)
 find . -type d													find all directories
 find . -type d  | perl -pi -e 's/\//\\\\/g' | perl -pi -e 's/\n$/\\\\*.m\n/' *.m&		find it at the end of the name
+find . -name '*.m' -exec ls -l --full-time {} \; | awk '{$1=$2=$3=$4=$5=$7=$8="";sub("    ","")}1' | awk '{gsub(/-/,"",$1);print}' | sort					find files with this suffix in the directory structure and sort by modify date
 find . -type f -exec ls -l --time-style=full-iso {} \; | awk '{print $6,$NF}' | awk '{gsub(/-/,"",$1);print}' | awk '$1>= 20120201 && $1<= 20120229 {print $1, $2}' | sort         find between these times
 find /mnt/u/work/calc_sheets -type f -exec ls -l --full-time {} \; | awk '{$1=$2=$3=$4=$5=$7=$8="";sub("    ","")}1' | awk '{gsub(/-/,"",$1);print}' | awk '$1>= 20170201 && $1<= 20220229 {print $1, $2}' | sort         find between these times
 find . -type f -newermt 2017-02-01 ! -newermt 2022-02-29 | awk '{$1=$2=$3=$4=$5=$7=$8="";sub("    ","")}1' | sort		find between these times			
@@ -95,6 +97,10 @@ dos {filename}							remove <cr> if present, adds <cr> if not present
 diff							compare two files, terminal mode
 
 rsync -a --delete --exclude='*.ds' matlab /scratch	archive the matlab directory into /scratch directory (deleting things in the archive that have been deleted in the original)
+
+declare -F								show all function names declared in the shell
+declare -f								show all function contents declared in the shell
+declare -f function1					show function contents for function1
 
 -------- Bash Tips -------------
 ctrl-r search through history
