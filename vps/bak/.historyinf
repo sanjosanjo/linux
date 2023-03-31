@@ -1,0 +1,781 @@
+source .bashrc
+alias
+mkdir .ssh
+cd .ssh
+vi authorized_keys
+bash
+cd .ssh
+ssh-keygen -t rsa -b 4096
+cat id_rsa.pub 
+cat authorized_keys 
+ssh mine
+vi config
+ping google.com
+ping google.com -4
+ping4 google.com
+ping4 sanjo.one
+cat config
+ssh mine
+curl ipconfig.co
+alias
+curl ifconfig.co
+curl ifconfig.me
+curl --ipv4 ifconfig.co
+curl --ipv4 ifconfig.me
+vi .bashrc
+ssh odroid
+ssh ds220
+vi .ssh/authorized_keys 
+ssh mine
+listen
+sudo apt update && apt-list upgradeable
+sudo apt update && apt list --upgradeable
+sudo apt upgrade -y
+alias
+vi ~/.bashrc
+source ~/.bashrc
+serv
+serv1
+hgrep systemctl
+sudo systemctl enable rsync
+serv1
+sudo systemctl start rsync
+which rclone
+sudo apt update && apt list --upgradeable
+sudo apt install rclone
+which rclone
+neofetch
+sudo apt install neofetch
+neofetch
+htop
+sudo apt install htop
+htop
+df -h
+ncdu
+sudo apt install ncdu
+ncdu
+vim
+vi ~/.bashrc
+source ~/.bashrc
+listen1
+curl sanjo.one
+curl sanjo.one/downloads
+curl sanjo.one/scripts
+curl www.sanjo.one/downloads
+curl sanjo.one | less
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys 
+sudo apt update && apt list --upgradeable
+sudo apt upgrade -y
+ssh mine
+ll .ssh
+ssh mine "ls -al .ssh"
+cat .ssh/authorized_keys 
+ssh odroid "cat .ssh/authorized_keys"
+ssh odroid
+ssh ds220
+cat .ssh/authorized_keys 
+ssh ds220 "cat .ssh/authorized_keys | grep mine"
+ssh ds220 "cat .ssh/authorized_keys | grep mine" >> .ssh/authorized_keys 
+ip addr
+curl --ipv4 ifconfig.co
+curl --ipv6 ifconfig.co
+sudo apt update && apt list --upgradeable
+sudo apt install nnn
+nnn
+export LC_COLLATE="C"
+nnn
+ssh mine
+df -h
+sudo apt update && apt list --upgradeable
+sudo apt upgrade -y
+listen
+sudo apt install duf
+duf
+listen
+duf
+df
+listen
+ss -tulpn | grep LISTEN
+listen
+duf
+cd /var/www
+cd /var
+sudo apt update && apt list --upgradeable
+sudo apt upgrade -y
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+duf
+listen
+caddy run
+sudo systemctl stop caddy
+listen
+caddy run
+ta
+sudo apt install tmux
+curl localhost:2019/config/
+mkdir tmp
+cd tmp
+vi caddy.json
+curl localhost:2019/load -H "Content-Type: application/json" -d @caddy.json
+listen
+curl localhost:2019/config/
+curl localhost:2015
+vi Caddyfile
+caddy run
+caddy adapt
+cd tmp
+caddy adapt
+cat caddy.json 
+listen
+listen
+caddy run
+listen
+cd /etc
+cd caddy
+cat Caddyfile 
+less Caddyfile 
+cd /var
+mkdir www
+sudo mkdir www
+sudo chown andy:andy www
+sudo mkdir www/html
+sudo chown andy:andy www/html
+ll www
+cd www/html
+vi a.txt
+vi Caddyfile 
+sudo vi Caddyfile 
+listen
+sudo systemctl start caddy
+listen
+ssh mine "ls -al /var/www/html"
+scp mine:/var/www/html/w.html .
+scp mine:/var/www/html/robots.txt .
+mkdir scripts
+ssh mine "ls -al /var/www/html"
+cd /var/log
+cd caddy
+sudo vi /etc/caddy/Caddyfile 
+sudo systemctl reload caddy
+cat andy.log 
+sudo cat andy.log
+listen
+sudo apt install ca-certificates curl gnupg lsb-release
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+listen
+sudo systemctl start docker
+listen
+sudo systemctl enable docker
+systemctl status
+sudo docker pull portainer/portainer
+duf
+htop
+sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+listen
+sudo docker images
+listen
+cd /mnt
+mkdir data
+sudo mkdir data
+sudo chown andy:andy data
+sudo mkdir data/apps
+sudo chown andy:andy data/apps
+cd data
+sudo mkdir /mnt/data/apps/navidrome
+sudo chown andy:andy /mnt/data/apps/navidrome
+sudo mkdir /mnt/data/apps/filebrowser
+sudo chown andy:andy /mnt/data/apps/filebrowser
+id
+ssh mine "id"
+listen
+cd apps
+cd filebrowser/
+cat .filebrowser.json/
+ta
+cat .viminfo
+vi .vimrc
+vi test
+vi .vimrc
+vi test
+vi .vimrc
+vi test
+date
+vi .vimrc
+vi test
+vi .vimrc
+vi test
+vi .vimrc
+vi test
+sudo apt update && apt list --upgradeable
+listen
+sudo apt update && apt list --upgradeable
+sudo apt upgrade -y
+which sad
+which sag
+which upd
+which upg
+vi ~/.bashrc
+source ~/.bashrc
+upd
+cat .bashrc | grep apt
+cat .bashrc | grep apt | ssh mine -T "cat >> /home/andy/.bashrc"
+ssh "cat ~/.bashrc 
+ssh mine "cat ~/.bashrc | grep apt"
+ssh mine "cat ~/.bashrc"
+cat ~/.ssh/config
+ssh odroid
+alias
+upd
+vi ~/.bashrc
+rm .bashrc.swp
+vi ~/.bashrc
+source ~/.bashrc
+sudo run-parts /etc/update-motd.d/
+cd /etc/update-motd.d
+sudo chmod 644 50-motd-news 
+sudo run-parts /etc/update-motd.d/
+sudo chmod 644 10-help-text 
+sudo run-parts /etc/update-motd.d/
+hgrep mot
+sudo run-parts /etc/update-motd.d/
+vi ~/.bashrc
+source ~/.bashrc
+upd
+upg
+curl -sL portal.spatiumportae.com | sudo bash
+portal receive 2-mass-sigma-comet
+rm time_results.txt 
+bat .history 
+cat ~/.ssh/config
+vi ~/.ssh/config
+cd .shh
+rm .config.swp 
+vi ~/.ssh/config
+ssh bee
+ssh ds220
+ssh bee
+upd
+upg
+ls -l
+cd /
+ls -l
+ll /srv
+man ls
+sudo install man
+sudo apt install man
+man ls
+man date
+date +FORMAT %H
+date --help
+date %H
+date +%H
+date +%H%M
+date +%y%m%d%H%M
+ls -
+ls --help
+ls --help | grep time
+ls -l --time-style=%y
+ls -l --time-style=+%y
+ls -l --time-style=+%y%m%d
+ls -l --time-style=+%y%m%d%h
+ls -l --time-style=+%y%m%d%H%M
+ls -l --time-style=+%y%m%d%H%M tmp
+ls -l --time-style=+%y%m%d-%H%M tmp
+ls -l tmp
+ls --help
+ls -o
+ls -l
+alias
+ls -AlG
+ls -Al
+vi ~/.bashrc
+source ~/.bashrc
+ls -l --time-style=+%y%m%d-%H%M
+ls -lH --time-style=+%y%m%d-%H%M
+ls -lH --time-style=+%y%m%d-%H%M /
+ls -l --time-style=+%y%m%d-%H%M /
+ls --help
+ls -lh --time-style=+%y%m%d-%H%M /
+ls -l --time-style=+%y%m%d-%H%M /
+ls -l --time-style=+%y%m%d-%H%M /etc
+ls -lh --time-style=+%y%m%d-%H%M /etc
+ls -lhG --time-style=+%y%m%d-%H%M /etc
+ls -lhG /etc
+ls -lhG --time-style=+%y%m%d-%H%M /etc
+lt /
+alias
+mkdir bak
+touch bak/.historyinf
+vi ~/.bashrc
+source ~/.bashrc
+ls -lhG --time-style=+%y%m%d-%H%M /etc
+ll /bak
+ll bak
+cat ~/bak/.historyinf 
+history 1
+man history
+tail -1 ~/.history
+vi ~/.bashrc
+source ~/.bashrc
+ls -lhG --time-style=+%y%m%d-%H%M ~/bak
+ll bak
+ll ~/bak
+ls -lhAG --time-style=+%y%m%d-%H%M ~/bak
+cat ~/bak/.historyinf 
+ls -lhAG --time-style=+%y%m%d-%H%M ~/bak
+hr
+ssh mine 'cat ~/.bashrc | grep alias'
+ssh mine 'cat ~/.bashrc | grep hr'
+alias
+ssh mine 'cat ~/.bashrc | grep hr' >> .bashrc
+cat ~/bak/.historyinf 
+cat ~/.history > ~/bak/.historyinf 
+cat ~/bak/.historyinf 
+htop
+htop
+df -h
+listen
+hgrep caddy
+sudo less /etc/caddy/Caddyfile 
+sudo less /etc/caddy/Caddyfile 
+sudo apt install git
+git config --global user.name "sanjosanjo"
+git config --global user.email "sanjosanjo@gmail.com"
+mkdir git
+mkdir git
+mkdir git
+cd git
+git clone https://github.com/sanjosanjo/linux
+git clone https://github.com/sanjosanjo/linux
+cd git
+gh auth login
+sudo apt install gh
+gh auth login
+gh auth login
+git config --global user.email "25749341+sanjosanjo@users.noreply.github.com"
+git config --global user.email
+cd git
+cd git
+gh auth login
+gh auth login
+git clone https://github.com/sanjosanjo/linux.git
+git clone https://github.com/sanjosanjo/linux.git
+ncdu
+cd linux/
+cd linux/
+grep cut unix_notes.txt 
+hgrep cut
+hgrep cut
+ll | cut -f 2-
+ll | cut -f 2
+ll | cut ' '  -f 2
+ll | cut " "  -f 2
+ll | cut -d ' '  -f 2
+ls -al
+ls -al
+type ll
+ll | cut -d ' '  -f 2-
+ll | cut -d ' '  -f 3-
+ll | cut -d ' '  -f 4-
+vi ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+ls -F --color=auto
+ls -F --color=auto
+ls -F --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ll --color=auto
+ll --color=auto
+ll --color=auto
+man ls
+man ls
+man ls
+man ls
+man ls
+man ls
+ll --color=auto
+ll --color=auto
+ll --color=auto
+ls -o --color=auto
+ls -o --color=auto
+ls -o --color=auto
+ls -Ao --color=auto
+ls -Ao --color=auto
+ls -Ao --color=auto
+ls -AoF --color=auto
+ls -AoF --color=auto
+ls -AoF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -alF --color=auto
+ls -AlF --color=auto
+ls -AlF --color=auto
+ls -AlF --color=auto
+ls -AlF --color=auto
+ls -AlF --color=auto
+ls -AlF --color=auto
+ls --help | grep first
+ls --help | grep first
+ls --help | grep first
+ls -AlF --color=auto --group-directories-first
+ls -AlF --color=auto --group-directories-first
+ls -AlF --color=auto --group-directories-first
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+tree
+tree
+tree
+tree
+pstree
+pstree
+pstree
+pstree
+pstree
+pstree
+pstree
+pstree
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+vi README.md 
+vi README.md 
+vi README.md 
+vi README.md 
+vi README.md 
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux commit -m "some notes" -a && git push
+mkdir vps
+mkdir vps
+mkdir vps
+mkdir vps
+mkdir vps
+cp .bashrc vps/
+cp .bashrc vps/
+cp .bashrc vps/
+cp .bashrc vps/
+cp .bashrc vps/
+ll vps
+ll vps
+ll vps
+ll vps
+ll vps
+ls vps
+ls vps
+ls vps
+ls vps
+ls vps
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+cp ~/.bashrc vps/.bashrc
+cp ~/.bashrc vps/.bashrc
+cp ~/.bashrc vps/.bashrc
+cp ~/.bashrc vps/.bashrc
+cp ~/.bashrc vps/.bashrc
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+cp .inputrc git/linux/vps/
+cp .inputrc git/linux/vps/
+cp .inputrc git/linux/vps/
+cp .inputrc git/linux/vps/
+cp .inputrc git/linux/vps/
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .profile 
+cat .bash_logout 
+cat .bash_logout 
+cat .bash_logout 
+cat .bash_logout 
+cat .bash_logout 
+cat .vimrc
+cat .vimrc
+cat .vimrc
+cat .vimrc
+cat .vimrc
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+cat .viminfo 
+ls bak
+ls bak
+ls bak
+ls bak
+ls bak
+cat bak/.historyinf 
+cat bak/.historyinf 
+cat bak/.historyinf 
+cat bak/.historyinf 
+cat bak/.historyinf 
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+vi ~/.bashrc
+ll .ssh
+ll .ssh
+ll .ssh
+ll .ssh
+ll .ssh
+type ll
+type ll
+type ll
+type ll
+type ll
+ls -Ao .ssh
+ls -Ao .ssh
+ls -Ao .ssh
+ls -Ao .ssh
+ls -Ao .ssh
+cp .ssh git/linux/vps
+cp .ssh git/linux/vps
+cp .ssh git/linux/vps
+cp .ssh git/linux/vps
+cp .ssh git/linux/vps
+cp -r .ssh git/linux/vps/
+cp -r .ssh git/linux/vps/
+cp -r .ssh git/linux/vps/
+cp -r .ssh git/linux/vps/
+cp -r .ssh git/linux/vps/
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+cat .gitconfig 
+cat .gitconfig 
+cat .gitconfig 
+cat .gitconfig 
+cat .gitconfig 
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd git/linux/
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd vps
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+cd .ssh/
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+lll
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git push
+git push
+git push
+git push
+git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "some notes" -a && git push
+ls -al bak
+ls -al bak
+ls -al bak
+ls -al bak
+ls -al bak
