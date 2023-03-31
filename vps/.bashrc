@@ -1,85 +1,74 @@
+LRED="\[\033[1;31m\]"
+LBLUE="\[\033[1;34m\]"
+WHITE="\[\033[1;37m\]"
+GREEN="\[\033[0;32m\]"
 set -o vi
-screen_num="."
-THEIP=$(hostname -I | awk '{ print $1}')
-PS1='$SHLVL \[\e]0;\u@\h: \w\a\]\[\033[01;31m\]\u@\h($THEIP).....\w\n\[\033[01;34m\]\! > \[\033[00m\]'
-export PATH=.:$PATH:/usr/local/go/bin
-# A new shell gets the history lines from all previous shells
-shopt -s histappend
+MYIP=$(curl --ipv4 ifconfig.me --silent)
+PS1="$GREEN$SHLVL $LRED\u@\h($MYIP).....\w\n$LBLUE\! > $WHITE"
+PATH=.:$PATH
+
+# check the window size after each command and, if necessary, update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 shopt -s cmdhist
 shopt -s cdspell
-shopt -s checkwinsize
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-export HISTFILE=~/.history
-export HISTIGNORE="&:ls:ll:l:lt:la:h:pwd:exit:pss:cd:..:history*"
-#export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-export PROMPT_COMMAND="history -a; history -c; history -r;$PROMPT_COMMAND"
-#export PROMPT_COMMAND="history -a; history -c; history -r"
-export HISTCONTROL=ignoredups:erasedups:ignorespace
-export INPUTRC=~/.inputrc
+shopt -s histappend				# write history to file immediately
 
-alias sudo='sudo '
-alias listen='sudo lsof -i -P | grep -i "listen"'
+export HISTFILE=~/.history
+export HISTIGNORE="&:ls:ll:l:lt:la:h:hh:pwd:exit:..:duh:duh2:cd"
+export HISTCONTROL=ignoredups:erasedups:ignorespace
+export HISTSIZE=5000
+export HISTFILESIZE=5000
+
+#  history -a  # append history lines from this session to the history file.
+#History file may contain history from other terminals not in this one so:
+#  history -c # clear [in-memory] history list deleting all of the entries.
+#  history -r # read the history file and append the contents to the history list instead
+# A new shell gets the history lines from all previous shells
+#export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a;history -c;history -r;tail -1 $HISTFILE >> ~/bak/.historyinf;$PROMPT_COMMAND"
+#PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'history 1 >> ~/bak/.historyinf'
 alias ls='ls -F --color=auto'
-alias l='ls -hlF --color=auto'
-alias ll='ls -hAlF --color=auto'
-alias lt='ls -hlAtrF --color=auto'
+#alias ls='ls -F'
+alias sudo='sudo '
+alias l='ls -h'
+alias lt='ls -lAGtrh | cut -d " "  -f 4-'
+alias ll='ls -AlGh --group-directories-first | cut -d " "  -f 4-'
+alias lll='ls -Aoh --group-directories-first | cut -d " "  -f 4-'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias duh='du -h -d 1'
-alias duh2='du -h -d 2 | sort -h'
+alias duh="du -xh -d 1 | sort -h"
+alias duh2="du -xh -d 2 | sort -h"
 alias d='df -h'
+alias grep='grep --color'
 alias h='history'
 alias hh='history 50'
-alias grep='grep --color '
+alias hr='history | sort -rn | less '
 alias hgrep='history | grep '
-alias ver='dmesg | grep -i available;lsb_release -a'
-alias pdrive='cd /mnt/p/MSI/BUSINESS/Development\ Engineering/Kiran_Section/ak/'
+alias hhgrep='cat ~/bak/history_total.txt | grep '
+alias listen='sudo lsof -i -P | grep -i "listen"'
+alias listen1='sudo ss -lnpt'
 alias ports='sudo lsof -i -P -n'
+alias psss='ps -ef --sort=start_time'
 alias pss='ps axjf'
-alias myip='curl ifconfig.co'
-#alias info='cat /home/andy/unix_notes.txt'
-alias info='git -C ~/git/linux pull && bat ~/git/linux/unix_notes.txt'
+alias ver='lsb_release -a'
+alias web='cd /var/www/html'
+alias myip='curl --ipv4 ifconfig.me'
+alias info='bat /home/andy/unix_notes.txt'
+#alias info='git -C ~/git/linux pull && bat ~/git/linux/unix_notes.txt'
 alias redo='sudo $(history -p !!)'
-alias sys='/usr/bin/neofetch;cat /proc/cpuinfo | grep "MHz\|name"; cat /proc/meminfo | grep MemTotal'
-alias shelltype='echo $0'
+alias sysinfo='neofetch;cat /proc/cpuinfo | grep "MHz\|name"; cat /proc/meminfo | grep MemTotal;uname -m'
+alias shelltype='echo $0a'
+alias pstree1='pstree -aplh'
+alias down='cd /var/www/html/downloads/complete'
 alias ta='tmux new -A -s andy'
-#alias pstree1='pstree -aplh'
-alias mountall='sudo mount -t drvfs P: /mnt/p; sudo mount -t drvfs H: /mnt/h; sudo mount -t drvfs U: /mnt/u'
-
+alias tm='tmux new -A -s music'
 alias ncdux='ncdu --exclude='/var/www/html/drivemusic/*''
 alias dux='du --exclude='/var/www/html/drivemusic/*''
-alias serv='systemctl list-unit-files --type service -all'
+alias serv='systemctl list-units --type=service -all'
+alias serv1='systemctl list-unit-files --type=service -all'
+alias akpy='source ~/akpy/bin/activate'
+alias frl='sudo firewall-cmd --reload && sudo firewall-cmd --list-all'
+alias ffprobebit='/usr/bin/ffprobe -hide_banner -v error -show_entries stream=bit_rate -of default=noprint_wrappers=1 '
+alias upd='sudo apt update && apt list --upgradeable'
+alias upg='sudo apt upgrade -y'
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-function findsuffix {
-# Display usage information if no arguments are provided
-if [[ $# -eq 0 ]]; then
-	printf 'Usage example: %-30s  %20s\n' "findsuffix txt"  "to find all files below current directory"
-	printf 'Usage example: %-30s  %20s\n' "findsuffix txt /full/path/" "to find all files below specified directory"
-	return 1
-fi
-# Check for path, use current directory if not specified
-if [[ $# -eq 1 ]]; then
-	path='.'
-else
-	path=$2
-fi
-#while :;do echo -n .;sleep 1;done &
-#trap "kill $!" EXIT  #Die with parent if we die prematurely
-# this is the only relevant operation.  The other stuff provides a status update and can be removed if it causes problems
-find $path -name "*.$1" -exec ls -l --full-time {} \; | awk '{$1=$2=$3=$4=$5=$7=$8="";sub("    ","")}1' | awk '{gsub(/-/,"",$1);print}' | sort
-#kill $! && trap " " EXIT #Kill the loop and unset the trap or else the pid might get reassigned and we might end up killing a completely different process
-}
-
-function functionaliaslist() {
-    echo
-    echo -e "\033[1;4;32m""Functions:""\033[0;34m"
-    declare -F | awk {'print $3'}
-    echo
-    echo -e "\033[1;4;32m""Aliases:""\033[0;34m"
-    alias | awk {'print $2'} | awk -F= {'print $1'}
-    echo
-    echo -e "\033[0m"
-}
