@@ -1,3 +1,18 @@
+-------- vi --------------
+v		vim visual mode, can select multiple line
+:set paste	vi paste mode on, prevents indenting issues
+:set nopaste	vim paste mode off
+3dd		vim delete three lines starting with current, put in buffer
+3yy		vim copy three lines starting with current, put in buffer
+
+----- tmux --------------
+tmux action stroke is <ctrl-b>, will abbreviate as cb
+tmux new -A -s andy		create or attach to session named andy  
+cb, d			tmux, to detach
+cb, "			tmux, split into horiz panes
+cb, %			tmux, split into vert panes
+cb, arrow up or down	tmux, move between panes
+
 --------------------- find -------------------------
 find * | grep {filename}	finding a file in any subdirectories from current location
 fd {filename} .		finding a file in any subdirectories from current location. Can use {path} instead of .
@@ -60,13 +75,6 @@ nmap -p 22 anand/24		scan for port 22 on this subnet
 mtr google.com                  better than traceroute
 lft google.com                  better than traceroute
 ifconfig eth0 169.254.185.150
------ tmux --------------
-tmux action stroke is <ctrl-b>, will abbreviate as cb
-tmux new -A -s andy		create or attach to session named andy  
-cb, d			tmux, to detach
-cb, "			tmux, split into horiz panes
-cb, %			tmux, split into vert panes
-cb, arrow up or down	tmux, move between panes
 sort {filename}			sorts the file alphabetically
 uniq {filename}			displays the unique lines of the file
 python3 -m http.server 		shares the current directory (on remote browser using http://ip:8080)
@@ -121,7 +129,3 @@ pscp root@169.254.185.150:/usr/loca/local/bin/* u:\work\
 vncserver :67 -geometry 1280x965
 vncserver -kill :67
 
--------- vi --------------
-v		vim visual mode, can select multiple line
-:set paste	vi paste mode on, prevents indenting issues
-:set nopaste	vim paste mode off
