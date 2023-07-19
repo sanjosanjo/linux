@@ -18,9 +18,9 @@ cb, %			tmux, split into vert panes
 cb, arrow up or down	tmux, move between panes
 
 --------------------- find -------------------------
-find * | grep searchstring						finding a file or directory in any subdirectories from current location
-find * | grep smpm.*cst							this is how to use wildcards.  Also:   find * | 'grep smpm.*cst'
-fd {filename} .					finding a file in any subdirectories from current location. Can use {path} instead of .
+find * | grep searchstring			finding a file or directory in any subdirectories from current location
+find * | grep smpm.*cst				this is how to use wildcards.  Also:   find * | 'grep smpm.*cst'
+fd {filename} .						finding a file in any subdirectories from current location. Can use {path} instead of .
 find . -type f -name '*.m' -exec ls -l \{\} \;		find all .m files in an subdirectories  (the -exec part gives more details information)
 find . -name '*.m' | xargs grep xxx			look for the string "xxx" in all .m files in the current directory structure (recursive)
 find . -name '*.dds' -exec grep xxx /dev/null \{\} \;
