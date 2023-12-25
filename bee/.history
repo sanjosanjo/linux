@@ -1,0 +1,3797 @@
+ls -l
+cd
+ls -l
+ls -al
+which ssh
+ssh 192.168.1.11
+ls -al
+cd .ssh
+ls -al
+sudo apt install openssh
+sudo apt update
+sudo apt install openssh-client
+sudo apt install openssh-server
+ssh 192.168.1.11
+cd ..
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy.bashrc /home/andy/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.bashrc /home/andy/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.bash_profile /home/andy/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.inputrc /home/andy/
+source .bashrc
+cd .ssh
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/ssh/config /home/andy/.ssh/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.ssh/config /home/andy/.ssh/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.ssh/authorized_keys /home/andy/.ssh/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.ssh/id_rsa /home/andy/.ssh/
+scp andy@192.168.1.11:/volume1/data/backup/beeu59/andy/.ssh/id_rsa.pub /home/andy/.ssh/
+ssh ds220
+ssh odroid
+cat config
+vi config
+ssh odroid
+cat config
+ssh mac
+cat id_rsa.pub 
+df
+df -h
+cd .ssh
+ssh-keygen -t rsa -b 4096
+cat id_rsa.pub
+ssh odroid 'cat ~/.ssh/authorized_keys'
+cat id_rsa.pub | ssh odroid 'cat >> ~/.ssh/authorized_keys'
+ssh odroid
+ssh odroid 'cat ~/.ssh/authorized_keys'
+ssh ds220 'cat ~/.ssh/authorized_keys'
+cat id_rsa.pub | ssh ds220 'cat >> ~/.ssh/authorized_keys'
+ssh ds220 'cat ~/.ssh/authorized_keys'
+cat authorized_keys 
+ssh ds220
+cat authorized_keys 
+vi authorized_keys 
+cat authorized_keys 
+ssh mine 'cat ~/.ssh/authorized_keys'
+ssh vps 'cat ~/.ssh/authorized_keys'
+cat id_rsa.pub | ssh vps 'cat >> ~/.ssh/authorized_keys'
+ssh vps
+ssh mine
+which mosh
+mosh
+sudo apt install mosh
+sudo visudo
+which mosh
+df -h
+alias
+neofetch
+sudo apt install neofetch
+neofetch
+listen
+tree
+sudo apt install tree
+tree
+ncdu
+sudo apt install ncdu
+sudo apt updaye && apt list -upgradable
+sudo apt update && apt list -upgradable
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+ncdu
+cd 
+cd /
+ncdu
+sudo ncdu
+cd
+alias
+ta
+sudo apt install tmux
+ta
+sysinfo
+listen
+alias
+pss
+alias
+psss
+alias
+ports
+sudo apt install nmap
+sudo apt install mtr
+mtr 8.8.8.8
+alias
+myip
+sudo apt install curl
+myip
+cd /
+duh
+sudo duh
+ping 8.8.8.8
+htop
+sudo apt install htop
+htop
+ssh mine
+ssh mine "alias"
+ssh mine "alias" | grep aplh
+ssh mine "alias" | grep aplh >> ~/.bashrc
+cd
+cat .bashrc
+ssh mine "alias"
+ssh mine "alias" | grep system
+ssh mine "alias" | grep system >> .bashrc
+alias
+ver
+source .bashrc
+alias
+pstree1
+alias
+serv
+sudo apt install  powerstat
+powerstat
+powerstat -z
+powerstat -R
+sudo apt remove  powerstat
+sudo apt install powertop
+sudo apt autoremove
+powertop
+sudo powertop
+sudo apt remove powertop
+ifcofig
+ifconfig
+sudo apt install net-tools
+ifconfig
+sudo reboot
+ssh vps
+cat .ssh/config
+ssh odroid "cat ~/.ssh/config"
+ssh mine "cat ~/.ssh/config"
+ssh mine "head -5  ~/.ssh/config"
+ssh mine "head -5  ~/.ssh/config" >> .ssh/config
+vi .ssh/config 
+ssh vps
+ssh mine "head -5  ~/.ssh/config"
+cat .ssh/config
+hgrep mosh
+serv
+listen
+mosh odroid
+which mosh
+ssh vps
+env
+ssh vps "env"
+ssh vps
+cfdisk
+sudo cfdisk
+htop
+pstree
+listen
+cockpit
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt install cockpit
+sudo systemctl enable --now cockpit.socket
+listen
+cd /etc/cockpit/
+sudo vi cockpit.conf
+sudo systemctl restart cockpit.socket
+sudo apt install cockpit-packagekit cockpit-storaged
+listen
+hh
+listen
+sudosystemctl stop cockpit.socket
+sudo systemctl stop cockpit.socket
+listen
+sudo reboot
+listen
+cat .ssh/authorized_keys 
+hh
+sudo cfdisk
+df -h
+clear
+df -h
+sudo reboot
+sudo apt update
+sudo apt install grub-customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt install grub-customizer
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo snap install novnc
+listen
+sudo snap get novnc services
+cd snap
+cd novnc
+cd 8
+cd common
+ncdu
+sudo apt install tigervnc-standalone-server
+vncpasswd
+vncserver -localhost no
+vncserver -list
+vncserver -kill :1
+vncserver -list
+sudo vi /etc/systemd/system/vncserver@.service
+sudo systemctl daemon-reload
+sudo systemctl enable vncserver@1.service --now
+vncserver -list
+which ufw
+sudo ufw allow from any to any port 5901 proto tcp
+listen
+sudo systemctl enable vncserver@1.service --now
+sudo systemctl enable vncserver@.service --now
+listen
+sudo reboot
+listen
+vncserver -localhost no
+listen
+hh
+listen
+sudo snap set novnc services.n6082.listen=6082 services.n6082.vnc=localhost:5901
+listen
+sudo reboot
+listen
+df -Th
+df -h
+clear
+df -Th
+which firewall-cmd
+sudo apt install firewalld
+listen
+sudo firewall-cmd --zone=public --permanent --add-port=9090/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=22/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=6082/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=1716/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=5900/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=5901/tcp
+sudo firewall-cmd --reload
+sudo firewall-cmd --info-zone=public
+sudo firewall-cmd --get-active-zones
+ifconfig
+firewall-cmd -h
+sudo firewall-cmd --list-all-zones
+cd /var/log/firewalld
+cd /var/log
+cd /etc
+sudo apt remove ufw
+sudo firewall-cmd --list-all-zones
+sudo systemctl restart firewalld
+hh
+listen
+hh
+hgrep vnc
+vncserver -localhost no
+listen
+cd
+cd .vnc
+cat passwd
+cat *.log
+ll /etc/tigervnc
+sudo cat /etc/tigervnc/vncserver.users 
+sudo vi /etc/tigervnc/vncserver.users 
+cd /usr/share/xsessions/
+vi ~/.vnc/config
+hgrep vnc
+vncserver -list
+vncserver -kill :1
+vncserver -list
+sudo systemctl enable vncserver@:1.service --now
+sudo systemctl status vncserver@:1.service
+hh
+hgrep vnc
+ll /etc/systemd/system
+sudo cat /etc/systemd/system/vncserver@.service 
+which vncserver
+sudo systemctl enable vncserver@:1.service --now
+sudo systemctl enable vncserver@.service --now
+sudo systemctl enable vncserver@:1.service --now
+kk
+cd
+cd .vnc
+vncserver
+listen
+hh
+vncserver -list
+vncserve -kill :1
+vncserver -kill :1
+vncserver -list
+listen
+cat config
+which plasma
+which startxfce4
+vi xstartup
+chmod +x xstartup 
+vi xstartup
+vncserver
+vncserver -list
+cd
+vi .vnc/xstartup
+vncserver
+which startkde
+which startplasma-wayland
+which startplasma-x11
+vi .vnc/xstartup
+vncserver
+tigervncserver -xstartup /usr/bin/xterm
+vncserver -list
+hgrep kill
+vncserver -kill :1
+vncserver -list
+cat .vnc/config
+x0vncserver -rfbauth ~/.vnc/passwd
+which x-window-manager
+startplasma-x11
+ps
+pss
+pss | grep plasma
+clear
+pss | grep plasma
+cat .vnc/config
+cat .vnc/xstartup 
+vncserver -list
+vi .vnc/xstartup 
+vncserver
+cat .vnc/xstartup 
+listen
+pss | grep plasma
+cd .vnc
+mv xstartup xstartup.bak
+vncserver
+pss | grep plasma
+vncserver -list
+vncserver -kill :1
+sudo apt-get install btrfs-tools
+btrfs devices scan
+sudo apt-get install btrfs-progs
+sudo lsblk
+df -Th
+sudo lsblk -e7
+sudo lsblk -e7; df -Th
+sudo btrfs filesystem show
+sudo btrfs filesystem usage
+sudo btrfs filesystem usage /dev/mapper/vg-root
+sudo btrfs filesystem usage /dev/mapper
+sudo btrfs filesystem usage /dev
+sudo btrfs filesystem usage /home
+sudo btrfs filesystem usage /
+listen
+sudo firewall-cmd --list-all-zones
+hgrep firew
+sudo firewall-cmd --info-zone=public
+ssh mine
+hgrep add-port
+sudo firewall-cmd --add-port=60000-61000/udp --permanent
+sudo firewall-cmd --reload
+listen
+mosh mine
+listen
+ports
+df -h
+cd /
+cd mnt
+mkdir nas
+sudo mkdir nas
+ssh odroid "hh"
+ssh odroid "history"
+ssh odroid
+hgrep ssh
+ssh mine "alias"
+ssh odroid "history"
+ssh odroid
+pushd ~
+grep nas historyodroid.txt 
+cat historyodroid.txt | grep nas
+nas
+alias
+man grep
+cd
+grep -e nas historyodroid.txt 
+sudo chown /mnt/nas
+sudo chown andy /mnt/nas
+sudo chgrp andy /mnt/nas
+ll /mnt
+mkdir /mnt/web
+mkdir /mnt/nas/web
+mkdir /mnt/nas/data
+cat fstab.txt 
+sudo cat /etc/fstab
+vi fstab.txt 
+sudo cat /etc/fstab
+cat fstab.txt 
+sudo cat fstab.txt >> /etc/fstab
+cat fstab.txt | sudo tee -a /etc/fstab
+sudo cat /etc/fstab
+bat historyodroid.txt 
+sudo apt install batcat
+sudo apt install batman
+sudo apt install bat
+which bat
+ssh odroid
+sudo ln -s /usr/bin/batcat /usr/bin/bat
+bat historyodroid.txt 
+head 169 historyodroid.txt 
+man head
+head -n 169 historyodroid.txt 
+head -n 169 historyodroid.txt | tail -n 16
+id -u andy
+id -g andy
+sudo cat /etc/fstab
+sudo systemctl daemon-reload
+sudo mount -a
+ll /mnt/nas
+ll /mnt/nas/web
+listen
+cd /mnt/nas/web
+cd Media/
+vi a.txt
+cat a.txt
+python -V
+cd
+which python
+which python3
+python3 -V
+sudo apt install python-is-python3
+python -V
+alias
+pstree1
+pstree1 | less
+sudo reboot
+ll /mnt/nas/web
+df -h
+fdisk -l
+redo
+sudo fdisk
+sudo fdisk -l
+sudo fdisk -l | bat
+sudo fdisk -l > /mnt/nas/web/Media/beeinfo.txt
+sudo cfdisk
+man cfdisk
+df
+lsblk
+hh
+lsblk >> /mnt/nas/web/Media/beeinfo.txt
+cat /mnt/nas/web/Media/beeinfo.txt
+btrfs filesystem show | awk '/ path /{print $NF}'
+udo trfs filesystem show | awk '/ path /{print $NF}'
+sudo btrfs filesystem show | awk '/ path /{print $NF}'
+sudo btrfs filesystem show
+sudo btrfs filesystem
+sudo btrfs filesystem df
+df
+df -h
+ftp ftp.connectpcb.com
+ll /mnt/nas/web/Media
+cp 1673-490-84a_20221128_1418CST.zip /mnt/nas/web/Media/
+scp 1673-490-84a_20221128_1418CST.zip andy@mine:/home/andy/
+which rclone
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt install rclone
+ll .config
+rclone config
+ll .config
+ll .config/rclone
+vi .config/rclone/rclone.conf
+rclone config
+cd .config/rclone
+cat .rclone.conf.swp 
+rm .rclone.conf.swp 
+rclone ls sanjogoogle:books
+rclone ls sanjoone:Media
+cat rclone.conf 
+rclone ls --max-depth=1 sanjoone:Media
+rclone ls --max-depth=2 sanjoone:Media
+rclone lsd --max-depth=1 sanjoone:Media
+cd /mnt
+mkdir sanjosanjo
+sudo mkdir sanjosanjo
+hgrep cho
+hgrep ch
+sudo chown andy /mnt/sanjosanjo/
+sudo chgrp andy /mnt/sanjosanjo/
+sudo mkdir sanjoone
+sudo chgrp andy /mnt/sanjoone/
+sudo chown andy /mnt/sanjoone/
+sudo mkdir shilak
+sudo chown andy /mnt/shilak/
+sudo chgrp andy /mnt/shilak/
+cd
+scp odroid:/home/andy/rclonesanjoone.service .
+cd /tmp
+cd
+cd .config/rclone
+cd
+rm google-chrome-stable_current_amd64.deb 
+chmod -x history_mine.txt 
+mkdir /tmp
+mkdir tmp
+mkdir tmp/rclone
+mkdir tmp/rclone/vfs
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone/vfs --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjosanjo: /mnt/sanjosanjo
+ll /mnt/sanjosanjo
+ll /mnt
+ll /home/andy/.config/rclone
+rclone mount --config=/home/andy/.config/rclone/rclone.conf sanjosanjo: /mnt/sanjosanjo
+rclone listremotes
+cd /mnt
+cd sanjosanjo/
+rclone mount --config=/home/andy/.config/rclone/rclone.conf sanjogoogle: /mnt/sanjosanjo
+ll sanjosanjo
+cat ~/tmp/rclone/rclone.log 
+ll ~/tmp/rclone/vfs
+ll ~/tmp/rclone/vfs/vfs
+ll ~/tmp/rclone/vfs/vfs/sanjogoogle/
+ll ~/tmp/rclone/vfs/vfsMeta/
+ll ~/tmp/rclone/vfs/vfsMeta/sanjogoogle/
+ll ~/tmp/rclone/
+ll ~/tmp/rclone/vfs
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone/vfs --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjogoogle: /mnt/sanjosanjo
+rm -rf ~/tmp/rclone/vfs
+rm -rf ~/tmp/rclone
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjogoogle: /mnt/sanjosanjo
+mkdir ~/tmp/rclone
+ll ~/tmp/rclone
+cat ~/tmp/rclone/rclone.log 
+ll sanjosanjo
+which fusermount
+vi rclonesanjoone.service 
+cat ~/tmp/rclone/rclone.log 
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log --drive-chunk-size 128M sanjogoogle: /mnt/sanjosanjo
+ll sanjosanjo
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjogoogle: /mnt/sanjosanjo
+cd
+vi z.txt
+rclone config reconnect sanjogoogle:
+ll /mnt/sanjosanjo
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjogoogle: /mnt/sanjosanjo
+rclone ls sanjogoogle:books
+sudo reboot
+rclone config reconnect sanjogoogle:
+listen
+hgrep vnc
+hgrep tiger
+sudo apt remove tigervnc-standalone-server
+sudo firewall-cmd --info-zone=public
+listen
+hh
+rclone ls sanjogoogle:books
+ll /mnt/sanjosanjo/
+alias
+du -h -d 1 /mnt/sanjosanjo/
+ll /mnt/sanjosanjo/
+du -h -d 1 /mnt/sanjosanjo/work
+du -h -d 0 /mnt/sanjosanjo/work
+du -h -d 0 /mnt/sanjosanjo/technical
+du -h -d 0 /mnt/sanjosanjo/misc
+du -h -d 1 /mnt/sanjosanjo/ --exclude=/mnt/sanjosanjo/sanjo.one/*
+ll /mnt
+alias
+vi .bashrc
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log sanjogoogle: /mnt/sanjosanjo
+ll /mnt/sanjosanjo
+rclone mount --config=/home/andy/.config/rclone/rclone.conf --umask 022 --cache-dir /home/andy/tmp/rclone --no-modtime --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --allow-non-empty --log-level INFO --log-file /home/andy/tmp/rclone/rclone.log --drive-chunk-size 128M sanjogoogle: /mnt/sanjosanjo
+vi rclonesanjoone.service 
+sudo ll/etc/systemd/system
+sudo ll /etc/systemd/system
+sudo cat /etc/systemd/system/vncserver@.service 
+mv rclonesanjoone.service rclonesanjosanjo.service
+cat rclonesanjosanjo.service 
+vi rclonesanjosanjo.service 
+sudo cp rclonesanjosanjo.service /etc/systemd/system/
+sudo ll /etc/systemd/system
+systemctl start rclonesanjosanjo
+systemctl status
+sudo systemctl start rclonesanjosanjo
+systemctl stop rclonesanjosanjo
+sudo systemctl start rclonesanjosanjo
+ll /mnt/sanjosanjo
+sudo systemctl status
+sudo systemctl stop rclonesanjosanjo
+sudo mv /etc/systemd/system/rclonesanjosanjo.service /usr/lib/systemd/system/
+sudo systemctl daemon-reload
+systemctl status
+sudo systemctl start rclonesanjosanjo
+systemctl status
+sudo systemctl enable rclonesanjosanjo
+systemctl status
+sudo systemctl start rclonesanjosanjo
+systemctl status
+sudo systemctl daemon-reload
+sudo systemctl start rclonesanjosanjo
+systemctl status
+cd rclone
+cd tmp
+sudo journalctl -u rclonesanjosanjo.service
+sudo vi /usr/lib/systemd/system/rclonesanjosanjo.service 
+sudo systemctl start rclonesanjosanjo
+sudo systemctl daemon-reload
+systemctl status
+sudo journalctl -u rclonesanjosanjo.service
+hh
+sudo systemctl start rclonesanjosanjo
+sudo systemctl enable rclonesanjosanjo
+sudo journalctl -u rclonesanjosanjo.service
+sudo systemctl stop rclonesanjosanjo
+sudo systemctl start rclonesanjosanjo
+sudo journalctl -u rclonesanjosanjo.service
+ll /mnt/sanjosanjo
+ll /mnt
+hh
+cd /usr/lib/systemd
+cd system
+cat /usr/lib/systemd/system/rclonesanjosanjo.service 
+systemctl status
+ll rclonesanjosanjo.service 
+sudo chown andy rclonesanjosanjo.service 
+sudo chgrp andy rclonesanjosanjo.service 
+hh
+sudo systemctl stop rclonesanjosanjo.service 
+hh
+systemctl start rclonesanjosanjo.service 
+ll /mnt/sanjosanjo/
+sudo systemctl stop rclonesanjosanjo.service 
+ll /mnt/sanjosanjo/
+hh
+cat rclonesanjosanjo.service 
+rm rclonesanjosanjo.service 
+hh
+sudo cp /usr/lib/systemd/system/rclonesanjosanjo.service .
+sudo chown andy rclonesanjosanjo.service 
+sudo chgrp andy rclonesanjosanjo.service 
+hh
+ta
+hh
+df -h
+hh
+sudo systemctl start rclonesanjosanjo
+df -h
+sudo systemctl stop rclonesanjosanjo
+df -h
+cat /usr/lib/systemd/system/rclonesanjosanjo.service 
+sudo vi /usr/lib/systemd/system/rclonesanjosanjo.service 
+sudo systemctl start rclonesanjosanjo
+sudo systemctl daemon-reload
+sudo systemctl start rclonesanjosanjo
+df -h
+ll /mnt
+ll /mnt/sanjosanjo/
+sudo systemctl stop rclonesanjosanjo
+hh
+sudo systemctl enable rclonesanjosanjo
+sudo systemctl daemon-reload
+hh | less
+history 100 | less
+systemctl status
+sudo systemctl start rclonesanjosanjo
+systemctl status
+df -h
+hh
+sudo systemctl restart rclonesanjosanjo
+df -h
+hgrep jou
+sudo journalctl -u rclonesanjosanjo.service
+cat /usr/lib/systemd/system/rclonesanjosanjo.service 
+systemctl start rclonesanjosanjo
+df -h
+sudo journalctl -u rclonesanjosanjo.service
+cat /usr/lib/systemd/system/rclonesanjosanjo.service 
+systemctl start rclonesanjosanjo
+sudo journalctl -u rclonesanjosanjo.service
+systemctl stop rclonesanjosanjo
+sudo systemctl stop rclonesanjosanjo
+sudo journalctl -u rclonesanjosanjo.service
+cd /etc
+ll fuse.conf
+sudo vi fuse.conf 
+cd ll
+cd
+cd .config
+mkdir systemd
+mkdir systemd/user
+hgrep service
+cd systemd/user/
+sudo mv /usr/lib/systemd/system/rclonesanjosanjo.service ~/.config/systemd/user/
+vi rclonesanjosanjo.service 
+mv rclonesanjosanjo.service rclone@.service
+head rclone@.service 
+systemctl --user daemon-reload
+systemctl --user enable rclone.sanjosanjo
+systemctl --user enable rclone@sanjosanjo
+systemctl --user start rclone@sanjosanjo
+systemctl --user status rclone@sanjosanjo.service
+journalctl --user -xeu rclone@sanjosanjo.service
+cat rclone@.service 
+ll /mnt
+systemctl --user daemon-reload
+systemctl --user enable rclone@sanjogoogle
+systemctl --user start rclone@sanjogoogle
+cat .ssh/authorized_keys 
+cat .ssh/authorized_keys | grep Juice
+ssh vps "cat .ssh/authorized_keys"
+ssh vps "cat .ssh/authorized_keys | grep Juice"
+cat .ssh/authorized_keys | grep Juice
+curl ifconfig.co
+sudo mtr google.com
+sudo mtr rcn.com
+mtr rcn.com
+myip
+hgrep curl
+hh
+listen
+hgrep firewall
+sudo firewall-cmd --list-all-zones
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+lsattr
+df -h
+cd /mnt
+lsattr
+sudo btrfs filesystem usage -T /
+hh
+sudo btrfs filesystem usage -T /
+hh
+hgrep btrfs
+sudo btrfs filesystem df
+sudo btrfs filesystem
+sudo btrfs filesystem df /
+sudo btrfs filesystem du /
+sudo btrfs filesystem
+sudo btrfs filesystem show
+sudo btrfs filesystem usage /
+hgrep btrfs
+btrfs devices scan
+sudo btrfs filesystem usage /home
+sudo btrfs filesystem usage /
+sudo btrfs filesystem usage /home
+btrfs subvolume list
+btrfs subvolume list /
+sudo btrfs subvolume list /
+btrfs filesystem show | awk '/ path /{print $NF}'
+btrfs filesystem df /
+btrfs filesystem show
+sudo btrfs filesystem show
+sudo btrfs filesystem label /
+sudo btrfs filesystem label /home
+sudo btrfs filesystem label /btrfs
+sudo btrfs filesystem label /mnt
+cd /mnt
+ll nas
+ll /nas/data
+ll nas/data
+ll nas/web
+sudo bat /etc/fstab
+sudo umount /mnt/nas/web
+sudo umount /mnt/nas/data
+ll nas/web
+ll nas/data
+cd nas
+sudo chattr -i /mnt/nas/data
+sudo chattr -i /mnt/nas/web
+lsattr /mnt/nas
+which chattr
+sudo chattr +i /mnt/nas/web
+sudo chattr +i /mnt/nas/data
+lsattr /mnt/nas
+lsattr /mnt
+date
+sudo chattr +i /mnt/nas
+sudo chattr +i /mnt/sanjoone/
+sudo chattr +i /mnt/sanjosanjo/
+sudo chattr +i /mnt/shilak/
+lsattr /mnt
+sudo mount -a
+ll /mnt/nas/data
+ll /mnt/nas/data/office
+ll /mnt/nas/data/backup
+which smbcontrol
+ll /etc/samba
+sudo vi /etc/samba/smb.conf 
+sudo apt install samba
+sudo bat /etc/samba/smb.conf 
+sudo service smbd restart
+sudo smbpasswd -a andy
+sudo service smbd restart
+listen
+hgrep firew
+sudo
+su
+hgrep firewall-cmd
+sudo firewall-cmd --list-all-zones
+sudo firewall-cmd --list-all-zones | bat
+sudo firewall-cmd --info-zone=public
+sudo firewall-cmd --zone=public --permanent --add-source=192.168.0.0/16
+sudo firewall-cmd --reload
+sudo firewall-cmd --info-zone=public
+listen
+sudo reboot
+ll /mnt/nas/data
+listen
+hgrep vnc
+vncserver
+ll .vnc
+listen
+sudo firewall-cmd --zone=public --permanent --add-port=0-65535/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=0-65535/udpp
+sudo firewall-cmd --zone=public --permanent --add-port=0-65535/udp
+sudo firewall-cmd --reload
+sudo firewall-cmd --info-zone=public
+listen
+hgrep yt
+ll /mnt
+ll /mnt/nas
+sudo apt update
+sudo apt update && apt list --upgradable
+sudo apt install snapd
+sudo apt autoremove
+sudo snap install yt-dlp
+which yt-dlp
+cd /mnt
+cd nas/web
+cd Media/TV
+cd Youtube/
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+yt-dlp -f "vb*+ba/b" https://www.youtube.com/watch?v=yPVQtvbiS4Y
+cd Youtube/
+touch a.txt
+vi a.txt
+cat a.txt
+rm a.txt
+yt-dlp -f "bv*+ba/b" https://www.youtube.com/watch?v=yPVQtvbiS4Y
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+touch a.txt
+vi a.txt
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+cd
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+cd /mnt/nas/web/Media/TV/Youtube/
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+which yt-dlp
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+which yt-dlp
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+which yt-dlp
+ll /snap/bin
+yt-dlp -P /mnt/nas/web/Media/TV/Youtube/ -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+yt-dlp -P /mnt/nas/web/Media/TV/Youtube/ -f 137 https://www.youtube.com/watch?v=yPVQtvbiS4Y
+cd
+yt-dlp -f "bv*+ba/b" https://www.youtube.com/watch?v=yPVQtvbiS4Y
+rm What\ Actually\ Are\ Space\ And\ Time？\ \[yPVQtvbiS4Y\].webm 
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+yt-dlp -f 137 https://www.youtube.com/watch?v=yPVQtvbiS4Y
+journalctl -u snapd
+journalctl -u snapd | grep NFS
+journalctl -u snapd
+mv What\ Actually\ Are\ Space\ And\ Time？\ \[yPVQtvbiS4Y\].mp4 /mnt/nas/web/Media/TV/Youtube/WhatActuallyAreSpaceAndTime.mp4
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" https://www.youtube.com/watch?v=yPVQtvbiS4Y
+mv What\ Actually\ Are\ Space\ And\ Time？\ \[yPVQtvbiS4Y\].mp4 /mnt/nas/web/Media/TV/Youtube/WhatActuallyAreSpaceandTime.mp4
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" https://www.youtube.com/watch?v=ZoV5q9DD_9U
+mv Jon\ Bon\ Jovi\ Sings\ at\ a\ Wedding\ with\ Lourdes\ Valentin\ \[ZoV5q9DD_9U\].mp4 /mnt/nas/web/Media/TV/Youtube/JonBonJoviWeddingSinger.mp4
+yt-dlp --help
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=ZoV5q9DD_9U
+sudo yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=ZoV5q9DD_9U
+snap interface home
+hgrep snap
+sudo snap remove yt-dlp
+sudo add-apt-repository ppa:yt-dlp/stable    # Add ppa repo to apt
+which yt-dlp
+sudo apt install yt-dlp
+which yt-dlp
+hh
+yt-dlp -F https://www.youtube.com/watch?v=yPVQtvbiS4Y
+hh
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=ZoV5q9DD_9U
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=2Kk-RKo7214&list=LL&index=11
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=0VTcBO4q5kY&list=LL&index=25
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=0QpjR6-Uuks&list=LL&index=28
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=MHo1fNnXFVU&list=LL&index=29
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=LH0-WXUFY2k&list=LL&index=30
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/AndesPlaneCrash/ https://www.youtube.com/watch?v=n78f0NbncuE&list=LL&index=33
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/AndesPlaneCrash/ https://www.youtube.com/watch?v=jAVqVLzaOnM&list=LL&index=36
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/AndesPlaneCrash/ https://www.youtube.com/watch?v=Ahb-CdP8OZM&list=LL&index=37
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/AndesPlaneCrash/ https://www.youtube.com/watch?v=QoFLEjCIfNE&list=LL&index=38
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=Qb21lsCQ3EM&list=LL&index=53
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=YW-6gBRa68A&list=LL&index=71
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=G6NfRMv-4OY&list=LL&index=72
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=KNUKou8vnJQ&list=LL&index=74
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=5LGEiIL1__s&list=LL&index=75
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=lL0WayC7jW0&list=LL&index=118
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" -P /mnt/nas/web/Media/TV/Youtube/ https://www.youtube.com/watch?v=Un-FO8iXCrA&list=LL&index=152
+df -h
+cd /mnt
+hh
+cd
+vi .bashrc
+source .bashrc
+alias
+vi .bashrc
+source .bashrc
+d
+cd /
+duh
+vi .bashrc
+cd
+vi .bashrc
+source .bashrc
+cd /
+duh
+d
+df -h
+man df
+df -h
+df -h | sort
+d
+listen
+d
+mosh mine
+scp mine:/home/andy/.history historymine.txt
+bat rclonesanjosanjo.service 
+cat historymine.txt | grep rclonesanjo
+ssh mine "sudo cat /usr/lib/systemd/system/rclonesanjoone.service" > rclonesanjoone.service
+cat fstab.txt 
+id
+id andy
+head smb.conf 
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+cd /etc/samba
+sudo /etc/samba/smb.conf
+sudo vi /etc/samba/smb.conf
+sudo apt install samba
+sudo service smbd restart
+sudo smbpasswd -a andy
+hgrep rclone
+cd  /mnt
+id andy
+which fusermount
+ll /bin/fusermount
+hgrep chattr
+lsattr
+hgrep rclonesanjo
+cd .config/systemd
+cd 
+cd .config
+cd systemd
+cd user
+sudo systemctl daemon-reload
+systemctl enable rclonesanjoone
+rm rclone@.service 
+cd
+systemctl enable rclonesanjoone
+cd .config
+rm -rf systemd
+cd
+systemctl enable rclonesanjoone
+sudo systemctl daemon-reload
+systemctl enable rclonesanjoone
+ll /etc/systemd/system
+sudo mv rclonesanjoone.service /usr/systemd/system/
+sudo mv rclonesanjoone.service /etc/systemd/system/
+sudo systemctl daemon-reload
+systemctl enable rclonesanjoone
+systemctl status
+sudo reboot
+systemctl status
+systemctl enable rclonesanjoone
+hgrep rclonesanjo
+cd  /usr/lib/system/system
+ll r*
+ls *service
+cd /etc/systemd/
+cd system
+sudo chown root:root rclonesanjoone.service 
+sudo systemctl daemon-reload
+hh
+sudo systemctl enable rclonesanjoone
+cd /mnt
+ll sanjoone
+sudo systemctl start rclonesanjoone
+ll sanjoone
+cd /etc/systemd/system
+sudo cp rclonesanjoone.service rclonesanjosanjo.service
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+hh
+sudo systemctl daemon-reload
+sudo systemctl start rclonesanjosanjo
+sudo systemctl enable rclonesanjosanjo
+cd /nt
+cd /mnt
+ll sanjosanjo
+sudo systemctl start rclonesanjosanjo
+ll sanjosanjo
+ll /mnt/sanjoone
+cd
+cat rclonesanjosanjo.service 
+ll .config/rclone/rclone.conf 
+cat .config/rclone/rclone.conf 
+cd .config/rclone
+sudo cat rclone.conf 
+sudo vi rclone.conf 
+cd
+rm rclonesanjosanjo.service 
+sudo systemctl start rclonesanjosanjo
+ll /mnt/sanjosanjo
+sudo cat ~/.config/rclone/rclone.conf 
+ll /mnt
+cd /etc/systemd/system/
+sudo cp rclonesanjosanjo.service rcloneshilak.service
+sudo vi rcloneshilak.service 
+cd
+sudo systemctl daemon-reload
+sudo systemctl start rcloneshilak
+sudo systemctl enable rcloneshilak
+sudo systemctl start rcloneshilak
+ll /mnt/shilak
+sudo cat ~/.config/rclone/rclone.conf 
+sudo lsblk
+sudo lsblk -e7
+vi .bashrc
+source .bashrc
+d
+disks
+man df
+df -ah
+d
+hh
+alias
+vi .bashrc
+part
+source .bashrc
+part
+lsblk
+sudo lsblk
+man lsblk
+lsof -f
+curl cht.sh/tmux
+lsblk
+curl cht.sh/tmux
+curl cht.sh/tmux | bat
+lsof -f
+df -ah
+df -h
+alias
+lsblk -e7
+ll /mnt/shilak/
+df -h | grep -v Mounted | sort -t"        " -k 6,6
+df -h | grep -v Mounted | sort -t"  " -k 6,6
+df -h | grep -v Mounted | sort -t
+df -h | grep -v Mounted
+df -h
+df -h | { read -r line; echo "$line"; sort -k 6,6; }
+df -h | { read -r line; echo "$line"; sort -k 1,1; }
+df -h | { read -r line; echo "$line"; sort -kh 1,1; }
+df -h | { read -r line; echo "$line"; sort -h 1,1; }
+df -h | { read -r line; echo "$line"; sort -k 1,1; }
+vi .bashrc
+source .bashrc
+d
+alias
+alias | grep df
+d
+df -h
+df -h | { read -r line; echo "$line"; sort -k 1,1; }
+df -h | { read -r line; echo "$line"; sort -k 1; }
+df -h | { read -r line; echo "$line"; sort -k 6; }
+df -h | { read -r line; echo "$line"; sort -k 2; }
+df -h | { read -r line; echo "$line"; sort -k -h 2; }
+df -h | { read -r line; echo "$line"; sort -k 2 -h ; }
+df -h | { read -r line; echo "$line"; sort -kr 2,2 -h ; }
+df -h | { read -r line; echo "$line"; sort -nrk 2,2 -h ; }
+df -h | { read -r line; echo "$line"; sort -nrk 2,2; }
+df -h | { read -r line; echo "$line"; sort -rk 2,2 -h ; }
+vi .bashrc
+source .bashrc
+d
+lsblk -e7
+sudo btrfs device usage
+sudo btrfs device usage /
+sudo btrfs device usage /home
+hgrep btrfs
+hgrep btrfs | bat
+sudo btrfs filesystem label /
+sudo btrfs device usage /
+sudo btrfs filesystem usage /
+sudo btrfs device usage /
+lsblk -f
+sudo btrfs device usage /
+part
+btrfs filesystem df /btrfs
+btrfs filesystem df /
+d
+hgrep shilak
+sudo systemctl stop rcloneshilak
+d
+ta
+crontab -l
+d
+ll /mnt/nas/data/backup/google/sanjosanjo/drive/
+du
+duh
+alias 
+du -h /mnt/sanjosanjo/ -d 1
+du -hx /mnt/sanjosanjo/ -d 1
+ll /mnt/sanjosanjo/ 
+du -h -d 1 /mnt/sanjosanjo --exclude=*sanjo.one/*
+hh
+du -h -d 1 /mnt/sanjosanjo/ --exclude=*sanjo.one/*
+mkdir scripts
+kill 4957
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+mv rsync_sanjosanjo_to_nas.sh scripts
+cd scripts
+cat rsync_sanjosanjo_to_nas.sh 
+ll /var
+cat rsync_sanjosanjo_to_nas.sh 
+cd /mnt
+cd sanjosanjo
+cd nas
+cd data/backup/
+cd google/
+cd sanjosanjo/
+cd drive/
+ll /var/log
+sudo ~/scripts/rsync_sanjosanjo_to_nas.sh 
+lt /var/log
+ll ~
+mkdir misc
+mkdir misc/logs
+vi rsync_sanjosanjo_to_nas.sh 
+duh
+cd /var/log
+sudo bat rsync.log
+sudo bat rsync_sanjosanjo_to_nas.log 
+time sudo ~/scripts/rsync_sanjosanjo_to_nas.sh 
+man rsync
+touch ~/misc/logs/run.log
+cd
+cd misc
+hh
+ll misc
+hh
+cd misc
+cd
+mkdir misc
+mkdir misc/logs
+touch misc/logs/run.log
+alias
+cd /mnt
+cd /mnt/nas/data/backup/google/
+cd sanjosanjo/drive/
+cd /mnt/nas/data/backup/google/sanjosanjo/drive/
+cd scripts/
+cat rsync_sanjosanjo_to_nas.sh 
+curl cht.sh/rsync
+curl cht.sh/rsync+P
+cat rsync_sanjosanjo_to_nas.sh 
+rsync -ahvP --delete --delete-excluded --stats /mnt/sanjosanjo/financial/ /mnt/nas/data/backup/google/sanjosanjo/drive/
+curl cht.sh/rsync+h
+ll /mnt/nas/data/backup/google/sanjosanjo/drive/
+curl cht.sh/rsync
+curl cht.sh/tmux/pane
+curl cht.sh/tmux/;
+curl cht.sh/tmux+pane
+curl cht.sh/tmux/split
+curl cht.sh/tmux/keys
+curl cht.sh/tmux/bindings
+cd /mnt/
+cd sanjosanjo/
+du -h -d 1 /mnt/sanjosanjo/ --exclude=*sanjo.one/*
+rsync -ahvP --delete --delete-excluded --stats /mnt/sanjosanjo/Personal/ /mnt/nas/data/backup/google/sanjosanjo/drive/Personal/
+rsync -ahvP --delete --delete-excluded --stats /mnt/sanjosanjo/Personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rsync -ahvP --delete --delete-excluded --stats /mnt/sanjosanjo/personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+ll Personal/
+rsync -ahvP --delete --stats --info=progress2 /mnt/sanjosanjo/personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rsync -ahvP --delete --stats /mnt/sanjosanjo/personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm *
+rm -rf *
+ll personal
+hh
+cat rsync_sanjosanjo_to_nas.sh | grep sanjo
+rsync -ahvP --delete --stats --exclude 'sanjo.one' /mnt/sanjosanjo/personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+ll personal
+ll personal
+cd personal
+rm apr22.docx 
+rm may22.docx jul22.docx 
+rm oct22.docx 
+cd personal
+rsync -ahvP --delete --stats --exclude 'sanjo.one' /mnt/sanjosanjo/personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+duh
+sudo cat ~/.config/rclone/rclone.conf 
+rclone sanjosanjo: ls
+rclone sanjosanjo ls
+rclone ls sanjosanjo:
+cd .config
+cd .config/
+cd
+cd .config
+cd rclone/
+sudo chown andy:andy rclone.conf 
+rclone ls sanjosanjo:
+rclone lsl --max-depth 1 sanjosanjo:
+rclone ls --max-depth 1 sanjosanjo:
+cd /mnt/sanjoone
+cp /mnt/sanjosanjo/personal/vacations.docx .
+cp /mnt/sanjosanjo/personal/Camping2020.docx .
+rclone ls --max-depth 1 sanjoone:
+cp vacations.docx ~/
+ll ~
+lt ~
+rm ~/vacations.docx 
+cp vacations.docx ~/
+lt ~
+cd /mnt/nas/data/backup/
+cd google/
+cd sanjosanjo/
+cd drive/
+ll personal/
+lll
+rm -rf personal/
+cp Camping2020.docx /mnt/nas/data/backup/google/sanjosanjo/drive/
+cd /tmp
+cd rclone
+cd vfs
+sudo ll vfs
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+sudo systemctl stop rclonesanjosanjo
+sudo systemctl start rclonesanjosanjo
+ll /var/log
+sudo touch /var/log/rclone_sanjosanjo.log
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+ll vfs
+sudo ll vfs
+cd vfs
+sudo cd vfs
+sudo ls vfs
+sudo ls -al vfs
+sudo ls -al vfs/vfs
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+sudo systemctl stop rclonesanjosanjo
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+sudo systemctrl restart rclonesanjoone
+sudo systemctl restart rclonesanjoone
+sudo systemctl restart rclonesanjosanjo
+sudo ls -al /etc/systemd/system/rclone* 
+sudo reboot
+ta
+cd /mnt
+ll sanjosanjo
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+ll sanjosanjo/
+ll shilak/
+sudo systemctl stop rcloneshilak
+sudo systemctl disable rcloneshilak
+sudo systemctl disable rclonesanjosanjo
+sudo systemctl stop rclonesanjosanjo
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+cd /mnt/nas/data/backup/
+cd google/
+ll sanjosanjo/drive
+cd sanjosanjo/drive
+rclone ls --max-depth 1 sanjosanjo:
+ll .config/rclone
+sudo systemctl stop rclonesanjoone
+sudo chown andy:andy .config/rclone/rclone.conf 
+rclone ls --max-depth 1 sanjosanjo:
+sudo systemctl start rclonesanjoone
+ll /mnt/sanjoone/
+rclone ls --max-depth 1 sanjosanjo:personal
+rclone -P --fast-list sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone sync -P --fast-list sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rclone sync -P --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone -V
+rclone selfupdate
+rclone version
+sudo apt install rclone
+ssh mine
+ll /usr/bin/r*
+ll /usr/bin/rc*
+which rclone
+cd tmp
+ll rclone/
+cd rclone
+cd vfs
+head rclone.log
+tail rclone.log 
+rm -rf rclone/
+curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+unzip rclone-current-linux-amd64.zip 
+rm rclone-current-linux-amd64.zip 
+cd rclone-v1.61.1-linux-amd64/
+sudo cp rclone rclone /usr/bin/
+sudo cp rclone /usr/bin/
+sudo systemctl stop rclonesanjoone
+sudo chown root:root /usr/bin/rclone
+sudo chmod 755 /usr/bin/rclone
+ls /usr/local/share/man/man1
+sudo mkdir -p /usr/local/share/man/man1
+sudo cp rclone.1 /usr/local/share/man/man1/
+sudo mandb
+man rclone
+rclone version
+sudo systemctl start rclonesanjoone
+ll /mnt/sanjoone/
+hh
+rclone sync -P --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf rclone-v1.61.1-linux-amd64/
+cd
+cd .config/rclone/
+sudo systemctl stop rclonesanjoone
+systemctl start rclonesanjoone
+sudo systemctl start rclonesanjoone
+sudo systemctl stop rclonesanjoone
+sudo chown andy:andy rclone.conf 
+rclone sync -P --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+cd /root
+sudo -i
+sudo vi /etc/systemd/system/rclonesanjoone.service 
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo vi /etc/systemd/system/rcloneshilak.service 
+cd rclone/
+sudo systemctl daemon-reload
+sudo systemctl start rclonesanjoone
+ll /mnt/sanjoone
+rm -rf *
+rclone sync -vP --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone ls --max-depth 1 sanjosanjo:personal
+rclone lsl --max-depth 1 sanjosanjo:personal
+rclone sync -vP --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+duh
+rclone sync -ivP --fast-list --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone sync -vP --fast-list sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone lsl --max-depth 1 sanjosanjo:personal
+cat rclone.conf 
+rclone sync -vP --fast-list sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone sync -vP --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rclone lsl --max-depth 1 sanjosanjo:personal
+hh
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+btrfs filesystem df /
+hgrep btrfs
+sudo btrfs device usage
+sudo btrfs device usage /
+sudo btrfs filesystem usage /
+hgrep btrfs
+sudo btrfs filesystem show
+sudo btrfs subvolume list /
+hgrep df
+btrfs filesystem df /
+lsblk -f
+lsblk -e7
+df -h | { read -r line; echo "$line"; sort -k 1,1; }
+sudo lsblk -e7
+sudo btrfs device usage /
+sudo reboot
+cd tmp
+rclone lsl --max-depth 1 sanjosanjo:personal
+rclone sync -vP --metadata sanjosanjo:personal /home/andy/tmp/
+cd /mnt/nas/data/backup/google/sanjosanjo/
+cd drive/
+rm -rf *
+rclone sync -vP --metadata sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rclone sync -vP --metadata --refresh-times sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rclone sync -vP --metadata --refresh-times --modify-window 2s sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rclone sync -vP --metadata --refresh-times --modify-window 2s --checksum sanjosanjo:personal /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+hgrep fstab
+sudo bat /etc/fstab
+id andy
+rsync -ahvP --delete --stats --exclude 'sanjo.one' /home/andy/tmp /mnt/nas/data/backup/google/sanjosanjo/drive/
+ll tmp
+rm -rf tmp
+rsync -ahvP --delete --stats --exclude 'sanjo.one' /home/andy/tmp/ /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rsync -rlptDvP --delete --stats --exclude 'sanjo.one' /home/andy/tmp/ /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+rsync -rlpDvP --delete --stats --exclude 'sanjo.one' /home/andy/tmp/ /mnt/nas/data/backup/google/sanjosanjo/drive/
+rm -rf *
+cp pw.doc /mnt/nas/data/backup/google/sanjosanjo/drive/
+cp pw.docx /mnt/nas/data/backup/google/sanjosanjo/drive/
+sudo bat /etc/fstab
+rm -rf *
+rsync -avihXP --info=progress2 --delete --stats /home/andy/tmp/ /mnt/nas/data/backup/google/sanjosanjo/drive/
+stat pw.docx
+stat pw.docx
+rm -rf *
+ll $HOME/.ssh
+rsync -avP /home/andy/tmp/ andy@bee:/volume1/data/backup/google/sanjosanjo/drive/
+rsync -avP /home/andy/tmp/ andy@ds220:/volume1/data/backup/google/sanjosanjo/drive/
+hh
+sudo bat /etc/fstab
+sudo blkid
+rm -rf *
+cd /mnt
+sudo umount/mnt/nas/data
+sudo umount /mnt/nas/data
+sudo umount /mnt/nas/web
+ll nas
+sudo vi /etc/fstab
+sudo mount -a
+sudo bat /etc/fstab
+sudo umount /mnt/nas/web
+sudo umount /mnt/nas/data
+sudo vi /etc/fstab
+sudo mount -a
+sudo bat /etc/fstab
+sudo vi /etc/fstab
+sudo mount -a
+sudo u
+sudo umount /mnt/nas/data
+sudo vi /etc/fstab
+sudo mount -a
+ll nas/data
+ll nas
+ll /mnt/nas/data/backup/google/sanjosanjo/drive/
+rsync -avP /home/andy/tmp/ andy@ds220:/volume1/data/backup/google/sanjosanjo/drive/
+rm -rf /mnt/nas/data/backup/google/sanjosanjo/drive/*
+ll /mnt/nas/data/backup/google/sanjosanjo/drive/
+ssh ds220
+rm -rf *
+sudo btrfs su li /
+sudo bat /etc/fstab
+blkid
+sido lvdisplay
+sudo lvdisplay
+sudo lvdisplay | bat
+hgrep blk
+blkid
+sudo lvdisplay
+ls /dev/vg
+ls /dev/mapper
+mount
+mount | grep root
+mount | grep home
+blkid
+lvs
+sudo lvs
+lsblk -e7
+sudo cat /etc/fstab
+mount | grep home
+df
+sudo lvscan
+sudo lvchange -an /dev/vg/home
+sudo lvscan
+sudo lvremove /dev/vg/home
+sudo lvscan
+blkid
+lsblk -e7
+df -h
+sudo psv
+sudo vgdisplay vg
+df -h
+hh
+sudo lvscan
+sudo lvextend -l +100%FREE /dev/vg/root
+sudo lvscan
+lsblk -e7
+sudo btrfs filesystem show
+hgrep btrfs
+sudo btrfs filesystem usage
+sudo btrfs filesystem usage /
+sudo btrfs su li /
+sudo btrfs filesystem df
+sudo btrfs filesystem df /
+parted -l
+sudo parted -l
+sudo btrfs device usage /
+df -h
+sudo btrfs filesystem resize max /
+df -h
+sudo btrfs device usage /
+sudo parted -l
+lsblk -e7
+sudo btrfs device usage /
+lsblk -e7
+vi .ssh/authorized_keys 
+sudo systemctl status firewalld
+sudo systemctl stop firewalld
+sudo systemctl status firewalld
+sudo systemctl disable firewalld
+neofetch
+df -h
+rm vacations.docx 
+ll tmp
+cat z.txt 
+rm z.txt 
+cd /
+alias
+duh
+cd /tmp
+ll rclone/
+redo
+sudo ls rclone
+lsblk -e7
+ll mmt
+ll mnt
+cd mnt
+ll shilak/
+rm -rf shilak/
+sudo rm -rf shilak/
+hgrep chat
+sudo chattr -i /mnt/shilak/
+sudo rm -rf shilak/
+cd
+mv kasm_release_1.12.0.d4fd8a.tar.gz /tmp
+cd /tmp
+tar -xf kasm_release*.tar.gz
+cd kasm_release/
+cd ..
+sudo bash kasm_release/install.sh -L 8443 -J 2048
+cd ..
+duh
+losten
+listen
+htop
+ports
+listen
+alias
+serv
+sudo apt install fastfetch
+neofetch
+listen
+sysinfo
+htop
+hh
+hgrep apt
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo reboot
+listen
+curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb 
+sudo dpkg -i cloudflared.deb
+sudo cloudflared service install eyJhIjoiYjA0NjhlM2E2NTMwNzY5NDZkMDA3NWQwZTZlY2U2NjAiLCJ0IjoiODlmOGJlZTUtODU5OS00NTZiLTkzNjgtZTY5ODAwNmUxYzhjIiwicyI6Ik9UQmhOREF3T0RndFlUazNOaTAwTTJJMkxUZ3dOek10TlRjMU5qTTFZVGRoT0RoaCJ9
+hgrep service
+listen
+sudo systemctl cloudflared stop
+alias
+pstree1
+alias
+pss
+psss
+alias
+ports
+alias
+serv
+sudo reboot
+serv
+sudo service cloudflared stop
+serv
+sudo service cloudflared stop
+serv
+listen
+sudo service cloudflared start
+listen
+alias
+systemctl list-unit-files --type service
+alias
+systemctl list-unit-files --type service -all | grep cloudflared
+sudo service cloudflared stop
+sudo service cloudflared start
+listen
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt update && apt list --upgradable
+listen
+cd /
+cd var
+l /
+cd /home
+cd andy
+rm cloudflared.deb 
+rm 1673-490-84a_20221128_1418CST.zip 
+serv
+alias
+systemctl list-units --type=service
+systemctl status vncserver.service
+systemctl status vncserver@.service
+systemctl status vncserver@1.service
+hgrep vncserver
+sudo cat /etc/systemd/system/vncserver@.service 
+hgrep vncserver
+sudo mv /etc/systemd/system/vncserver@.service ~/
+sudo reboot
+serv
+systemctl list-units
+clear
+systemctl list-units
+listen
+serv
+sudo systemctl mask rclonesanjosanjo
+sudo systemctl mask rclonesanjosanjo.service
+hgrep rclonesanjosanjo
+ll /usr/lib/systemd/system
+ll /lib/systemd/system
+ll /etc/systemd/system
+l /etc/systemd/system/u*
+ll /lib/systemd/system/u*
+ll misc
+ll misc/logs
+ll scripts
+l /etc/systemd/system/*sanjo*
+l /etc/systemd/system/*rclone*
+sudo mv /etc/systemd/system/rclonesanjosanjo.service ~/scripts/
+sudo mv /etc/systemd/system/rcloneshilak.service ~/scripts/
+sudo reboot
+alias | grep serv
+alias | grep 'serv'
+systemctl list-units
+systemctl list-units -all
+systemctl list-units
+systemctl list-units --type=service
+systemctl list-units --type=service -all
+systemctl list-units --type=service
+systemctl list-unit-files
+serv
+alias | grep 'serv'
+vi ~/.bashrc
+source ~/.bashrc
+serv
+serv1
+alias | grep 'serv'
+vi ~/.bashrc
+vim ~/.bashrc
+sudo apt install vim
+vi ~/.bashrc
+which vi
+ll /usr/bin/vi
+vim -V
+hh
+cat .history
+hh
+systemctl list-unit-files
+vi test
+ssh ds220
+vi ~/.bashrc
+clear
+cat .ssh/config
+cd /mnt
+listen
+cd /home
+uid
+id
+ss
+ss -lnpt
+man ss
+netstat
+ss -lnp
+ss -llnt
+ss -lnt
+ss -lnpt
+sudo ss -lnpt
+vi ~/.bashrc
+ports
+source ~/.bashrc
+listen1
+hh
+mkdir -p ~/.ssh;
+chmod 700 ~/.ssh;
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINr0Fz+G6zZn0CrCEJ12CTSJYc4/wpS2clTY5TlzlTxh JuiceSSH " >> ~/.ssh/authorized_keys;
+chmod 600 ~/.ssh/authorized_keys;
+sudo ss -lnpt
+sudo ss -lnpt;
+listen
+htop
+cd /
+cd opt
+sudo ncdu
+duh
+df -h
+ssh mine "df -h"
+ssh mine "type ncdux"
+alias
+type serv
+ssh mine "ls -al"
+ssh mine "alias"
+vi ~/.bashrc
+source ~/.bashrc
+cd /
+ncdux
+cd /var/lib/docker
+hh
+serv
+hgrep vnc
+which vncserver
+vncserver -list
+listen
+hgrep vnc | less
+hgrep snap
+snap list
+snap list --all
+snap remove novnc
+sudo snap remove novnc
+snap list --all
+sudo snap remove --purge novnc
+ll snap
+cd snap
+ncdu
+cd novnc
+cd current
+rm -rf novnc/
+cd
+ll tmp
+serv
+listen
+cat vncserver@.service 
+ll /usr/bin/vn*
+ll /usr/bin/v*
+which x11vnc
+hgrep x11
+ll /var/run/sddm
+/usr/bin/x11vnc -display :0 -forever  -rfbport 5900 -xkb -noxrecord -noxfixes -noxdamage -nomodtweak -repeat -shared -norc -auth /var/run/sddm/*
+/usr/bin/x11vnc -display :0 -forever  -rfbport 5900 -xkb -noxrecord -noxfixes -noxdamage -nomodtweak -repeat -shared -norc -auth /var/run/sddm/* &
+listen
+ports
+serv
+htop
+x11vnc -V
+x11vnc -help
+echo $XDG_SESSION_TYPE
+declare -p ${!XDG@}
+pss
+alias
+psss
+alias
+pstree1
+pstree1 | grep x11
+ps
+pss
+listen
+kill -9 524156
+listen
+/usr/bin/x11vnc -display :0 -forever  -rfbport 5900 -xkb -noxrecord -noxfixes -noxdamage -nomodtweak -repeat -shared -norc -auth /var/run/sddm/* &
+listen
+hh
+pstree1 | grep x11
+kill -9 538172
+listen
+hgrep cloud
+sudo service cloudflared restart
+listen
+hgrep cloudflared
+journal ctl -u cockpit
+journalctl -u cockpit
+listen
+journalctl -u cockpit
+journalctl 
+journalctl --help
+hh
+serv
+serv1
+listen
+listen1
+listen
+journalctl -f
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt install cockpit-navigator
+cd tmp
+wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.10/cockpit-navigator_0.5.10-1focal_all.deb
+sudo apt install ./cockpit-navigator_0.5.10-1focal_all.deb 
+listen
+listen1
+cd /usr/share/cockpit/
+ssh mac
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+ssh -vvv vps
+curl ifconfig.co
+curl -6 ifconfig.co
+cd scripts/
+vi primes.sh
+cat -E primes.sh 
+rm primes.sh 
+vi primes.sh
+cat -E primes.sh 
+nano primes.sh
+cat -E primes.sh 
+nano primes.sh
+vi primes.sh
+chmod 777 primes.sh 
+primes.sh 13
+vi primes.sh
+primes.sh
+sudo apt update && apt list --upgradable
+ta
+sudo apt upgrade -y
+ssh ds220
+ta
+sudo reboot
+which yt-dlp
+hgrep yt
+yt-dlp -V
+yt-dlp --version
+yt-dlp -help
+yt-dlp --version
+sudo add-apt-repository ppa:yt-dlp/stable
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt install yt-dlp
+sudo apt autoremove
+python3 -m pip install -U yt-dlp
+python3 -V
+python -m ensurepip --upgrade
+python3 -m ensurepip --upgrade
+sudo apt install python3-venv python3-pip
+python3 -V
+hh
+python3 -m pip install -U yt-dlp
+cd .local/bin
+cd
+vi ~/.bashrc
+source ~/.bashrc
+which yt-dlp
+cat .bashrc
+ssh mine
+cat ~/.ssh/config
+ssh bee "tail .bashrc"
+ssh mine "tail .bashrc"
+ssh mine "tail -15 .bashrc"
+ssh mine "tail -20 .bashrc"
+ssh mine "tail -18 .bashrc"
+ssh mine "tail -18 .bashrc" >> ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+yt
+alias
+yt
+mkdir Downloads
+ll Downloads/
+mkdir Downloads/complete
+yt
+ll /mnt
+ll /mnt/nas
+yt https://youtu.be/WX_08zcCmx8 concordia.mp4
+ll Downloads/complete/
+ssh mine
+yt https://youtu.be/2AzAFqrxfeY cavemanlawyer.mp4
+yt-dlp -F https://youtu.be/2AzAFqrxfeY
+ll /mnt/nas/web/Media/youtube/
+hh
+ll Downloads/complete/
+cp Downloads/complete/* /mnt/nas/web/Media/youtube/
+rm Downloads/complete/* 
+yt https://youtu.be/-_gCLfSgtRU ImPrBloggers.mp4
+mv Downloads/complete/* /mnt/nas/web/Media/youtube/
+ll Downloads/complete/
+vi ~/.bashrc
+hh
+listen
+iperf
+sudo apt install iperf
+which curl
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+speedtest
+iperf -p 5201 -c 192.168.1.1
+npm install --global fast-cli
+sudo apt install npm
+npm install --global fast-cli
+sudo npm install --global fast-cli
+fast
+speedtest
+speedtest-cli --simple
+speedtest --simple
+speedtest
+yt https://youtu.be/-WYYlRArn3g PrinceHalftime2007.mp4
+ytd
+yt https://youtu.be/mjrdywp5nyE Halftime2017LadyGaga.mp4
+ytd
+yt https://youtu.be/EsopN7JKUVs Halftime1993MJ.mp4
+ytd
+yt https://youtu.be/qh0OyvjcJKE Halftime2014BrunoMars.mp4
+ytd
+yt https://youtu.be/IsCGt9zXJpI BrunoMars2012Grammys.mp4
+ytd
+yt-dlp -F https://youtu.be/IsCGt9zXJpI
+listen
+hh
+hr
+alias
+ssh mine "alias"
+vi ~/.bashrc
+source ~/.bashrc
+hr
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt install duf
+duf
+ta
+duf
+listen
+ssh vps
+ssh mine
+cat .ssh/config
+vi .ssh/config
+ssh vps
+perl -V
+python -V
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+which go
+sudo apt install go
+sudo snap install go
+snap install go
+sudo snap install go --classic
+sudo reboot
+go install github.com/theyahya/enola/cmd/enola@latest
+ll go
+enola sanjosanjo
+cd go/bin
+enola sanjosanjo
+enola juniper47
+enola --help
+cd go/bin
+enola sanjosanjo > a.txt
+cat a.txt
+rm a.txt
+vi ~/.bashrc
+source ~/.bashrc
+cd
+enola venusenvy47
+sudo apt install unrar
+alias
+cd /mnt/nas/web/downloads/complete/
+cd fromvps/
+cd fromrd
+mv The\ Beast\ Within\ -\ The\ Making\ of\ Alien\ \[2003\]/ Beast
+cd Beast/
+unrar e The\ Beast\ Within\ -\ The\ Making\ of\ Alien\ \[2003\].rar 
+rm *.rar
+mv MathWorks\ MATLAB\ R2022a\ v9.12.0.2009381\ \(x64\)/ MatlabR2022a_v9.12.0.2009381
+sudo apt update && apt list --upgradable
+sudo apt upgrade -y
+alias
+vi ~/.bashrc
+cd scripts
+alias
+vi ~/.bashrc
+source ~/.bashrc
+alias
+hh
+ssh odroid
+alias
+type
+listen
+hgrep mot
+ssh mine
+sudo run-parts /etc/update-motd.d
+cd /etc/update-motd.d/
+sudo chmod 644 91-contract-ua-esm-status 
+sudo run-parts /etc/update-motd.d
+sudo chmod 644 88-esm-announce 50-motd-news 
+sudo run-parts /etc/update-motd.d
+sudo chmod 644 10-help-text 
+sudo run-parts /etc/update-motd.d
+sudo vi /var/lib/ubuntu-advantage/apt-esm/etc/apt/sources.list.d/ubuntu-esm-apps.list
+sudo run-parts /etc/update-motd.d
+hh
+sudo vi /var/lib/ubuntu-advantage/apt-esm/etc/apt/sources.list.d/ubuntu-esm-apps.list
+sudo disable-esm
+sudo ua disable-esm
+sudo ua
+sudo ua pro
+sudo ua pro -
+sudo ua pro --help
+sudo ua pro disable
+sudo ua disable
+hh
+sudo ua disable
+sudo ua disable esm
+sudo ua disable-esm
+vi ~/.bashrc
+source ~/.bashrc
+sudo sed -Ezi.orig \ -e 's/(def _output_esm_service_status.outstream, have_esm_service, service_type.:\n)/\1 return\n/' \ -e 's/(def _output_esm_package_alert.*?\n.*?\n.:\n)/\1 return\n/' \ /usr/lib/update-notifier/apt_check.py
+sudo sed -Ezi.orig \ 
+sudo sed -Ezi.orig   -e 's/(def _output_esm_service_status.outstream, have_esm_service, service_type.:\n)/\1    return\n/'   -e 's/(def _output_esm_package_alert.*?\n.*?\n.:\n)/\1    return\n/'   /usr/lib/update-notifier/apt_check.py
+sudo /usr/lib/update-notifier/update-motd-updates-available --force
+sudo run-parts /etc/update-motd.d
+ssh vps "env"
+ssh vps "alias"
+ssh mine "alias"
+ssh mine "hh"
+ssh mine "env"
+echo $PS1
+echo "$PS1"
+echo {$PS1}
+env
+shell
+htop
+cargo install erdtree
+sudo apt install cargo
+cargo install erdtree
+vi ~/.bashrc
+source ~/.bashrc
+et
+et | less
+et --help
+et -I
+et --help
+et -l 2
+et -l2 -H
+duh
+et -l2 
+et -l2 -H
+hh
+ssh mine
+which et
+scp mine:.erdtreerc .
+et
+nxdu
+sudo apt install ncdu
+ncdu
+ncdu --help
+ncdu -e
+ncdu --help
+ncdu /
+ncdu -x /
+vifm
+sudo apt install vifm
+vifm
+vifm -h
+vi ~/.bashrc
+source ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+rm .bashrc.swp 
+bat .bashrc
+hh
+et -I
+et
+hh
+vifm
+vifm -V
+vifm -v
+vifm /
+ssh mine
+ssh vps
+ssh odroid
+htop
+go install github.com/noborus/guesswidth/cmd/guesswidth@latest
+ps
+ps | guesswidth
+ps aux
+ps aux | guesswidth
+upd
+upg
+ps aux | guesswidth csv
+sudo reboot
+alas
+aloas
+alias
+yt https://youtu.be/WVegHHmZ028 bigfoot.mp4
+yt-dlp -F https://youtu.be/WVegHHmZ028
+yt-dlp -U
+hgrep pip
+python3 -m pip install -U yt-dlp
+yt-dlp -F https://youtu.be/WVegHHmZ028
+yt https://youtu.be/WVegHHmZ028 bigfoot.mp4
+alias
+ytd
+upd
+upg
+upd
+curl -sL portal.spatiumportae.com | sudo bash
+portal receive 2-quark-meteor-gas
+rm time_results.txt 
+ssh mine
+yt https://www.nfhsnetwork.com/events/geneva-high-school-geneva-il/gam57a7fae9d7 lacrosse.mp4
+ta
+yt-dlp -F https://www.nfhsnetwork.com/events/geneva-high-school-geneva-il/gam57a7fae9d7
+ta
+less ~/.ssh/authorized_keys 
+ssh odroid
+less ~/.ssh/authorized_keys 
+upd
+upg
+ytd
+ta
+cd Downloads/complete/
+yt-dlp -F https://www.nfhsnetwork.com/events/geneva-high-school-geneva-il/gam57a7fae9d7
+yt-dlp -f 804 https://www.nfhsnetwork.com/events/geneva-high-school-geneva-il/gam57a7fae9d7
+ta
+hh
+ssh mine
+ta
+yt-dlp -f 804 https://www.nfhsnetwork.com/events/geneva-high-school-geneva-il/gam57a7fae9d7
+cd Downloads/complete/
+mv Geneva\ vs\ Schaumburg\ -\ Girls\ Varsity\ Lacrosse\ 03⧸21⧸2023\ \[gam57a7fae9d7\].mp4 lacrossGeneva.mp4
+mv lacrossGeneva.mp4 Downloads/complete/
+cd Downloads/complete/
+mv lacrossGeneva.mp4 LacrosseGeneva20230321.mp4
+rm Geneva\ vs\ Schaumburg\ -\ Girls\ Varsity\ Lacrosse\ 03⧸21⧸2023\ \[gam57a7fae9d7\].mp4.*
+ytd
+cd
+ytd
+ta
+yt-dlp -F https://www.youtube.com/watch?v=bu2YXLvKNW4
+ll /mnt
+cd /mnt/sanjoone
+cd bak
+cd worl
+cd tmp
+ll plots
+tail runlog.txt 
+head runlog.txt 
+cd plots
+ll quicktest/
+tail /mnt/sanjoone/bak/work/tmp/runlog.txt
+cut -f 1-4 /mnt/sanjoone/bak/work/tmp/runlog.txt
+head /mnt/sanjoone/bak/work/tmp/runlog.txt | cut -f 1-4
+cut -f 1-4 /mnt/sanjoone/bak/work/tmp/runlog.txt | less
+hh
+cd
+cut -f 1-4 /mnt/sanjoone/bak/work/tmp/runlog.txt | less
+cut -f 1-6 /mnt/sanjoone/bak/work/tmp/runlog.txt
+upd
+upg
+df -h
+sudo apt install hydra
+hydra -h
+hydra -l andy -p good4you 192.168.1.4 ssh
+hydra -l andy -p good4you 192.168.1.4 ssh -v
+hydra -l andy -p good4you 192.168.1.11 ssh -v
+hydra -l andy -p Good4you 192.168.1.11 ssh -v
+nmap -sV 192.168.1.11
+yt-dlp -F https://www.cc.com/video/0awfts/the-daily-show-with-jon-stewart-grand-heft-auto
+yt https://www.cc.com/video/0awfts/the-daily-show-with-jon-stewart-grand-heft-auto RobCorddryGas.mp4
+ll ~/Downloads/
+ll ~/Downloads/complete/
+ytd
+ll ~/Downloads/complete/
+ta
+ll /mnt/nas/web/Media/youtube/
+ls -al
+man ls
+ls -c
+ls -clt
+man ls
+ls -alG
+ls -alGC
+ls -alG
+ls -AlG
+ls -AlGtr
+vi ~/.bashrc
+yt https://youtu.be/ppGtTyYJsdw shuttle.mp4
+ta
+yt https://youtu.be/4VXuKNBx2co Apollo8FiringRoom.mp4
+hh
+ll /mnt/nas/web/Media/youtube/
+hh
+ll ~/Downloads/complete/
+ytd
+alias
+ll /mnt/nas/web/Media/youtube/
+lt /mnt/nas/web/Media/youtube/
+cd /mnt/nas
+cd web
+cd Media/youtube/
+mv shuttle.mp4 ShuttleAtlantisExhibhit.mp4
+upd
+upg
+python -V
+sudo reboot
+mkdir venvs
+sudo apt install python3-venv
+python -m venv ~/venvs/icloudpd
+ncdu
+~/venvs/icloudpd/bin/python -m pip install --upgrade pip setuptools wheels
+~/venvs/icloudpd/bin/python -m pip install --upgrade pip setuptools wheel
+~/venvs/icloudpd/bin/python -m pip install icloudpd
+duh
+cd venvs/icloudpd/
+cd bin
+~/venvs/icloudpd/bin/icloud --username sanjosanjo@gmail.com
+cd /mnt/data
+cd /mnt/nas/data/photos/andy3
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 10 --folder-structure {:%Y/%m} --only-print-filenames
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 10 --folder-structure {:%Y/%m}
+ncdu
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 20 --folder-structure {:%Y/%m}
+time ~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 20 --folder-structure {:%Y/%m}
+time ~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 30 --folder-structure {:%Y/%m}
+time ~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --recent 30 --folder-structure {:%Y/%m} --delete-after-download
+ncdu
+duh
+duh2
+duh
+rm -r andy1
+duh
+rm -r andy2
+duh
+htop
+time ~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --folder-structure {:%Y/%m} --delete-after-download
+duh
+time ~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/andy3 -u sanjosanjo@gmail.com --folder-structure {:%Y/%m} --delete-after-download
+mv andy3 andy_old
+mv shila shila_old
+mkdir shila
+hh
+head icloudpd
+hh
+head icloudpd
+hh
+~/venvs/icloudpd/bin/icloud --username shilak@gmail.com
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --recent 10 --folder-structure {:%Y/%m}
+duh
+hh
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --recent 10 --folder-structure {:%Y/%m} --delete-after-download
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --recent 10 --folder-structure {:%Y/%m} | tee ~/shilaphotos.log
+cat ~/shilaphotos.log 
+hh
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --recent 10 --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+cat ~/shilaphotos.log 
+duh
+cat ~/shilaphotos.log 
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --recent 10 --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+duh
+ta
+tail -f shilaphotos.log 
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+tail -f shilaphotos.log 
+ta
+head shilaphotos.log 
+head -30 shilaphotos.log 
+head -50 shilaphotos.log 
+head -90 shilaphotos.log 
+tail -f shilaphotos.log 
+ta
+hh
+grep delet shilaphotos.log | wc -l
+grep delet shilaphotos.log
+grep Delet shilaphotos.log
+grep Delet shilaphotos.log | wc -l
+tail  shilaphotos.log 
+grep Downl shilaphotos.log 
+grep Delet shilaphotos.log | wc -l
+head shilaphotos.log 
+head -50 shilaphotos.log 
+grep original shilaphotos.log
+grep Delet shilaphotos.log | wc -l
+find .ssh
+alias
+info
+grep Delet shilaphotos.log | wc -l
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+grep Delet shilaphotos.log | wc -l
+ta
+cd /mnt/nas/data/photos
+cd /mnt/nas/data/photos/shila
+cd 2023
+cd 04
+cd
+grep Delet shilaphotos.log | wc -l
+ta
+grep Delet shilaphotos.log | wc -l
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+grep Delet shilaphotos.log | wc -l
+~/venvs/icloudpd/bin/icloudpd -d /mnt/nas/data/photos/shila -u shilak@gmail.com --folder-structure {:%Y/%m} --delete-after-download | tee -a ~/shilaphotos.log
+ta
+grep Delet shilaphotos.log | wc -l
+ssh vps
+find /mnt/nas/data/photos/shila -type f | wc -l
+grep Delet shilaphotos.log | wc -l
+yt https://www.youtube.com/live/mGHwN2-ixnA?feature=share Lacrosse20230403.mp4
+cd
+ta
+yt https://www.youtube.com/live/mGHwN2-ixnA?feature=share Lacrosse20230403.mp4
+ll ~/Downloads/complete/
+df -h
+ytd
+df -h
+ll ~/Downloads/complete/
+yt https://www.youtube.com/live/5nB9nYaK7ak Lacrosse.mp4
+ta
+cd ~/Downloads/complete/
+hh
+cd ~/Downloads/complete/
+yt https://www.youtube.com/live/5nB9nYaK7ak?feature=share la.mp4
+ta
+rm Lacrosse.mp4 
+ytd
+cd
+ytd
+yt https://youtu.be/5nB9nYaK7ak lac.mp4
+type yt
+which yt-dlp
+yt-dlp -F https://youtu.be/5nB9nYaK7ak
+cd Downloads/complete/
+cd ~/Downloads/complete/
+yt-dlp -f 96 https://youtu.be/5nB9nYaK7ak
+yt-dlp -F https://youtu.be/5nB9nYaK7ak
+ta
+cd ~/Downloads/complete/
+rm Elk\ Grove\ High\ vs\ Schaumburg\ High\ School\ Girls\'\ Varsity\ Lacrosse\ 2023-04-06\ 19_51\ \[5nB9nYaK7ak\].mp4 
+rm lac.mp4 
+yt-dlp -F https://youtu.be/5nB9nYaK7ak 
+cd ~/Downloads/complete/
+type ll
+vi ~/.bashrc
+source ~/.bashrc
+cd
+yt-dlp -f 96 https://youtu.be/5nB9nYaK7ak
+mv Elk\ Grove\ High\ vs\ Schaumburg\ High\ School\ Girls\'\ Varsity\ Lacrosse\ \[5nB9nYaK7ak\].mp4 lac.mp4
+yt-dlp -F https://youtu.be/5nB9nYaK7ak 
+yt https://youtu.be/5nB9nYaK7ak la.mp4
+rm la.f137.mp4.*
+yt-dlp -f 97 https://youtu.be/5nB9nYaK7ak
+rm lac.mp4 
+yt-dlp -F https://youtu.be/5nB9nYaK7ak 
+yt-dlp -f 137 https://youtu.be/5nB9nYaK7ak
+rm *
+yt-dlp -f 248 https://youtu.be/5nB9nYaK7ak
+mv Elk\ Grove\ High\ vs\ Schaumburg\ High\ School\ Girls\'\ Varsity\ Lacrosse\ \[5nB9nYaK7ak\].webm lac.webm
+yt-dlp -F https://youtu.be/5nB9nYaK7ak 
+yt -F https://youtube.com/clip/Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c
+yt-dlp -F https://youtube.com/clip/Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c
+yt https://youtube.com/clip/Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c goal3.mp4
+rm *
+yt-dlp -F https://youtube.com/clip/Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c
+yt-dlp -f 96 https://youtube.com/clip/Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c
+mv Elk\ Grove\ High\ vs\ Schaumburg\ High\ School\ Girls\'\ Varsity\ Lacrosse\ \[Ugkx8uG0RfHUaYXEw69syz3_HmoYtG6vbH6c\].mp4 goal3.mp4
+rm goal3.mp4 
+yt https://youtube.com/clip/UgkxbmxWlXBx3r5DjuK6ILbK1-h1rzVMiLlU goal3.mp4
+rm goal3.mp4 
+yt-dlp -F https://youtube.com/clip/UgkxbmxWlXBx3r5DjuK6ILbK1-h1rzVMiLlU 
+yt-dlp -f 96 https://youtube.com/clip/UgkxbmxWlXBx3r5DjuK6ILbK1-h1rzVMiLlU 
+mv Elk\ Grove\ High\ vs\ Schaumburg\ High\ School\ Girls\'\ Varsity\ Lacrosse\ \[UgkxbmxWlXBx3r5DjuK6ILbK1-h1rzVMiLlU\].mp4 goal3.mp4
+ta
+yt-dlp -F https://youtu.be/CfDhoOnFpyU
+yt http://www.hudl.com/v/2KqDvz la.mp4
+yt https://www.hudl.com/watch/video/VmlkZW82NDMxYzVlZWJmMjUyYzFiNzRkZDI1OTg=/organizer cassie.mp4
+yt http://www.hudl.com/v/2KqjVE
+cd Downloads/complete/
+yt https://www.hudl.com/video/3/17534403/6432dfbca677370a2ce26b4c CassieGoal20230408_Streamwood.mp4
+yt https://www.hudl.com/video/3/17534403/6432e04964df630e34e53927 CassieGoals20230406_ElkGrove_nomusic.mp4
+yt https://www.hudl.com/video/3/17534403/6432e3d6d21b5208e8ae75e1 CassieGoals2023_BuffaloGrove.mp4
+df -yh
+df -h
+hgrep rclone
+hgrep sanjosanjo
+ll /etc/systemd/system
+ll /etc/systemd/system/rclone*
+ll /etc/systemd/system/rclonesanjoone.service 
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+ll /mnt
+ll /mnt/sanjosanjo
+ll *service
+ll tmp
+find . | grep service
+cat scripts/rclonesanjosanjo.service 
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+/usr/bin/rclone mount --config=/root/.config/rclone/rclone.conf --allow-other --allow-non-empty --umask 022 --cache-dir /tmp/rclone/vfs --no-seek --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --log-level INFO --log-file /var/log/rclone_sanjosanjo.log --uid 1000 --gid 1000 sanjosanjo: /mnt/sanjosanjo
+/usr/bin/rclone mount --config=/root/.config/rclone/rclone.conf --allow-other --allow-non-empty --umask 022 --cache-dir /tmp/rclone/vfs --no-seek --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --uid 1000 --gid 1000 sanjosanjo: /mnt/sanjosanjo
+sudo /usr/bin/rclone mount --config=/root/.config/rclone/rclone.conf --allow-other --allow-non-empty --umask 022 --cache-dir /tmp/rclone/vfs --no-seek --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --uid 1000 --gid 1000 sanjosanjo: /mnt/sanjosanjo
+ll /mnt
+ll /mnt/sanjosanjo/
+sudo /usr/bin/rclone mount --config=/root/.config/rclone/rclone.conf --allow-other --allow-non-empty --umask 022 --cache-dir /tmp/rclone/vfs --no-seek --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --uid 1000 --gid 1000 sanjosanjo: /mnt/sanjosanjo&
+ll /mnt/sanjosanjo/
+df -h
+df -h | grep sanjo
+hgrep umount
+sudo umount /mnt/sanjosanjo
+ll /mnt/sanjosanjo/
+ll /mnt
+ll nas
+ll /mnt/nas
+df -h
+rclone version
+which rclone
+sudo cat /root/.config/rclone/rclone.conf
+sudo /usr/bin/rclone mount --config=/root/.config/rclone/rclone.conf --allow-other --allow-non-empty --umask 022 --cache-dir /tmp/rclone/vfs --no-seek --stats 0 --vfs-cache-mode writes --vfs-cache-max-size 100M --uid 1000 --gid 1000 -vv sanjosanjo: /mnt/sanjosanjo&
+sudo umount /mnt/sanjosanjo
+ll /mnt/sanjosanjo/
+uname -a
+uname
+cat /etc/os-release
+yt https://www.youtube.com/embed/Hm0cAbK-ays?start=10&end=130 norm.mp4
+ll ~/Downloads/complete/
+hh
+cd ~/Downloads/complete/
+mv Norm\ Macdonald\ vs\ Cancer\ \=\ Draw\ \[Hm0cAbK-ays\].mp4 norm.mp4
+cd
+ytd
+ll ~/Downloads/complete/
+ll /mnt/nas/web/Media/youtube/
+ll /mnt/nas/web/Media/youtube/n*
+lt /mnt/nas/web/Media/youtube/
+which ffmeg
+which ffmpeg
+cd /mnt/nas/web/Media/youtube/
+ffprobe -hide_banner norm.mp4
+ffprobe -hide_banner norm.mp4 | grep uration
+ffprobe -show-format norm.mp4
+ffprobe -i norm.mp4 -show-format
+ffprobe -i norm.mp4 -show_format
+ffprobe -i norm.mp4 -show_format | duration
+ffprobe -i norm.mp4 -show_format | grep duration
+ffprobe -i norm.mp4 -show_format -v quiet | grep duration
+ffprobe -i *.mp4 -show_format -v quiet | grep duration
+ffprobe -i *.mp4 -show_format -v quiet
+ffprobe -i *.mp4
+ls *.mp4
+ls *.mp4 | xargs -n 1 
+hh
+ls *.mp4 | xargs -n 1 ffprobe -i -show_format -v quiet
+ls *.mp4 | xargs -I fname ffprobe -i fname -show_format -v quiet
+ls *.mp4 | xargs -I fname 
+ls *.mp4 | xargs -I fname ls -al fname
+hh
+ls *.mp4 | xargs -n 1 fname ls -al fname
+ls *.mp4 | xargs -I fname ls -al fname
+find . -name '*.txt' | xargs -I f sh -c 'ls -al f'
+find . -name '*.mp4' | xargs -I f sh -c 'ls -al f'
+find . -name '*.mp4' -print0
+find . -name '*.mp4' -print0 | xarhd -n1
+find . -name '*.mp4' -print0 | xargs -n1
+find . -name '*.mp4' -print0 | xargs -n1 -r0
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c ' ls -al "$1"'
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c 'ls -al "$1"'
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ls -al "$1""
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ls -Aoh "$1""
+hh
+hgrep fprobe
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "fprobe -i "$1" -show_format -v quiet | grep duration"
+hgrep fprobe
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "fprobe -i "$1" -show_format | grep duration"
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format | grep duration"
+hgrep ffprobe
+ffprobe -i norm.mp4 -show_format | grep duration
+hgrep ffprobe
+ffprobe -i norm.mp4 -show_format | duration
+hgrep ffprobe
+ffprobe -i norm.mp4 -show_format -v quiet | grep duration
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format -v quiet | grep duration"
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format -v quiet"
+find . -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format"
+hh
+find . -type f -name '*.mp4' -print0 | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format"
+find . -type f -name '*.mp4' -print0
+find . -type f -name '*.mp4'
+find . -type f -name '*.mp4' | xargs -n1 -r0  sh -c "ffprobe -i "$1" -show_format"
+find . -type f -name '*.mp4' | xargs -n1 -r0  sh -c "ffprobe -i "$1""
+hh
+ffprobe -i norm.mp4 -show_format -v quiet | grep duration
+ta
+yt https://www.youtube.com/watch?v=-qhn1srsVJ4 Lacrosse20230410_Hershey.mp4
+ssh mac
+upd
+ssh mac
+upd
+upg
+upd
+alias
+myip
+nmap –Pn –F 192.168.1.10
+redo
+sudo nmap –Pn –F 192.168.1.10
+sudo nmap –sS 192.168.1.10
+nmap -h
+sudo nmap –sT 192.168.1.10
+sudo nmap  192.168.1.10 -sT
+sudo nmap  192.168.1.10 -sS
+nmap 192.168.1.10 -sS
+sudo nmap  192.168.1.10 -sS
+hh
+sudo nmap  192.168.1.10 -Pn -F
+sudo nmap  192.168.1.10 -Pn
+hh
+sudo nmap  192.168.1.10 -Pn
+listen
+curl 192.168.1.6:49161
+ports
+sudo nmap  192.168.1.10 -Pn
+curl 192.168.1.10:49161
+ssh mac
+upd
+upg
+sudo reboot
+echo $(perl -e 'print chr(47 + rand 75) for 1..32')
+echo $(perl -e 'print chr(47 + rand 75) for 1..16')
+upd
+upg
+yt https://www.youtube.com/watch?v=jDhxzYh8YIo lacrosse22.mp4
+ll ~/Downloads/complete/
+rm * ~/Downloads/complete/
+rm ~/Downloads/complete/*
+ta
+hh
+hgrep ffprobe
+hr
+history > ~/Downloads/complete/beehistory.txt
+yt https://www.youtube.com/watch?v=6SshWom8a7M la.mp4
+cd ~/Downloads/complete/
+rm la.mp4 
+yt https://www.youtube.com/watch?v=6SshWom8a7M la.mp4
+ffmpeg -version
+ta
+cd ~/Downloads/complete/
+time ffmpeg -hide_banner -i la_game3.mp4 -filter:a volumedetect -f null /dev/null 2>&1
+upd
+upg
+yt-dlp -F https://www.youtube.com/watch?v=8KwkYccyX2A
+yt-dlp -F https://www.youtube.com/watch?v=NpGWECloBxA
+yt-dlp -F https://www.youtube.com/watch?v=8KwkYccyX2A
+cd .ssh
+cat authorized_keys 
+ssh odroid
+vi config
+ssh office
+ssh -vv office
+vi config
+ssh office
+yt-dlp -F https://www.youtube.com/watch?v=8KwkYccyX2A
+#yt https://www.youtube.com/watch?v=8KwkYccyX2A la.mp4
+cd
+cat .history
+ta
+yt https://www.youtube.com/watch?v=8KwkYccyX2A la.mp4
+df -Th
+sudo reboot
+yt-dlp -F https://www.nfhsnetwork.com/events/libertyville-high-school-libertyville-il/gam47f9ad938e
+yt https://www.nfhsnetwork.com/events/libertyville-high-school-libertyville-il/gam47f9ad938e la2.mp4
+ll ~/Downloads/complete/
+ta
+yt-dlp -F https://www.nfhsnetwork.com/events/libertyville-high-school-libertyville-il/gam47f9ad938e
+yt-dlp -F https://www.nfhsnetwork.com/events/libertyville-high-school-libertyville-il/gam47f9ad938e
+ta
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDRiMDU3Y2ViYzRiMjE0NTg4NTAwZDY=/organizer
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDRiMDU3Y2ViYzRiMjE0NTg4NTAwZDY
+yt-dlp https://www.hudl.com/watch/video/VmlkZW82NDRiMDU3Y2ViYzRiMjE0NTg4NTAwZDY=/organizer
+ll ~/Downloads/complete/
+yt https://youtu.be/aANi6fUV9W8 CosbyHitler.mp4
+ll ~/Downloads/complete/
+ytd
+ll ~/Downloads/complete/
+yt https://www.hudl.com/watch/video/VmlkZW82NDUwNGI4Mjc1NzgwMjE0ODA4YTVhN2Q=/organizer
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDUwNGI4Mjc1NzgwMjE0ODA4YTVhN2Q=/organizer
+yt https://www.hudl.com/watch/video/VmlkZW82NDUwNGI4Mjc1NzgwMjE0ODA4YTVhN2Q=
+upd
+upg
+ll tmp
+tree
+ll venvs/
+cd venv
+find .
+ll scripts/
+hh
+alias
+ncdu
+which rclone
+rclone -V
+python -V
+info ls
+vi ~/.bashrc
+info ls
+yt-dlp -F https://www.youtube.com/watch?v=Kyxev5oG9rs
+ta
+hh
+yt https://www.youtube.com/watch?v=Kyxev5oG9rs lac.mp4
+yt https://youtu.be/jphfMd4_LCs SNL_FredGarvin.mp4
+ytd
+ta
+yt-dlp -F https://www.nfhsnetwork.com/events/hampshire-high-school-hampshire-il/gam6ae53b6ba6
+yt https://www.nfhsnetwork.com/events/hampshire-high-school-hampshire-il/gam6ae53b6ba6 la.mp4
+yt https://youtu.be/aANi6fUV9W8 Whose_Line.mp4
+ytd
+upd
+upg
+hgrep dlp
+upd
+apt policy
+hgrep repos
+sudo add-apt-repository --remove ppa:yt-dlp/stable
+upd
+cd /etc/apt/sources.list.d/
+sudo cat yt-dlp-ubuntu-stable-jammy.list 
+sudo rm yt-dlp-ubuntu-stable-jammy.list 
+upd
+upg
+sudo apt autoremove
+cd
+upd
+apt-key
+upd
+sudo apt-key list
+upg
+upd
+alias
+apt list --upgradeable
+apt list --upgradeable -a
+upd
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
+upd
+ll ~/Downloads/complete/
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDVjNTQ2Mjc1NzgwMjE3YTQxZjI3OTQ=/explore
+yt https://www.hudl.com/watch/video/VmlkZW82NDVjNTQ2Mjc1NzgwMjE3YTQxZjI3OTQ=/explore l.mp4
+hgrep hudl
+yt https://www.hudl.com/watch/video/VmlkZW82NDVjNTQ2Mjc1NzgwMjE3YTQxZjI3OTQ=/organizer l.mp4
+which yt-dlp
+yt-dlp -V
+yt-dlp --version
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDVjNTQ2Mjc1NzgwMjE3YTQxZjI3OTQ=
+yt-dlp -F https://www.hudl.com/watch/video/VmlkZW82NDVjNTQ2Mjc1NzgwMjE3YTQxZjI3OTQ
+ll ~/Downloads/complete/
+who -b
+upd
+upg
+sudo reboot
+listeb
+listen
+hgrep sab
+ll /mnt
+hgrep rclonesanjoone
+ls -al /etc/systemd/system/rc*
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+sudo ls -al /root/.config/rclone
+ls -al ~/.config/rclone
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+hgrep sanjoone
+hr
+hgrep sanjoone
+hr
+rclone -V
+upd
+upg
+ssh vps 'ls'
+ssh vps 'history'
+ssh vps 'cat .history'
+ssh vps "history"
+ssh vps 'history'
+ssh vps 'env'
+history
+alias
+ssh vps '\history'
+ssh vps
+ssh vps 'alias'
+ssh vps
+ssh vps 'alias'
+ssh vps 'history'
+ssh vps 'll'
+ssh vps 'll /mnt'
+cat .bash_profile 
+ssh odroid
+sudo service cockpit status
+sudo service cockpit restart
+sudo service cockpit status
+listen
+sudo service cockpit enable
+hgrep sys
+systemctl list-units -all
+systemctl list-units
+hgrep sys
+systemctl list-unit-files
+hgrep sys
+ll /mnt
+ll /mnt/sanjoone
+hh
+sudo service rclonesanjoone status
+hgrep rclonesanjoone
+yt https://www.youtube.com/live/4QzlcgLssHc?feature=share la.mp4
+ll ~/Downloads/complete/
+grep '^ls' .history
+upd
+upg
+grep "^ls" .history
+grep '^sys' .history
+hgrep sys
+alias
+info
+alias
+which info
+info
+info grep
+grep -n '^sys' .history
+systemctl list-units
+whic ll
+which ll
+ssh vps 'll'
+ssh vps
+mkdir ~/git
+cd ~/git
+sudo apt install git
+ssh vps 'grep git .history' | head -15
+git config --global user.name "sanjosanjo"
+git config --global user.email "25749341+sanjosanjo@users.noreply.github.com"
+git clone https://github.com/sanjosanjo/linux.git
+ssh vps 'grep git .history' | head -25
+cd
+cat .gitconfig 
+ssh vps 'cat .gitconfig'
+ssh vps 'cat .history | grep gh'
+sudo apt install gh
+gh auth login
+hh
+cat .gitconfig 
+cd git
+git clone https://github.com/sanjosanjo/linux.git
+ll linux
+cat ~/git/linux/unix_notes.txt 
+vi ~/.bashrc
+source ~/.bashrc
+notes
+vi ~/.bashrc
+source ~/.bashrc
+notes
+vi ~/git/linux/unix_notes.txt 
+ssh vps 'grep git .history' | head -25
+cd
+git push linux
+git config --list
+git -C ~/git/linux status
+git -C ~/git/linux push
+hh
+git -C ~/git/linux add ~/git/linux && git -C ~/git/linux commit -m "added detail about grep" -a && git ~/git/linux push
+vi ~/.history
+vi ~/.bashrc
+source ~/.bashrc
+notes
+cat .bashrc
+grep git .bashrc
+git -C ~/git/linux pull && bat ~/git/linux/unix_notes.txt
+vi ~/.bashrc
+bat .bashrc
+which fusermount
+which fusermount3
+hgrep mount3
+hgrep fuser
+modprobe fuse
+sudo modprobe fuse
+cd /lib/modules
+rclone -V
+fusermount -V
+upd
+upg
+ll git
+notes
+sudo modprobe fuse
+man modprobe
+fusermount -V
+rclone -V
+rclone version
+ssh mine
+ssh vps
+neofetch
+fuse -V
+fuse3 -V
+fusemount3 -V
+fusermount3 -V
+fusermount -V
+ssh mine 'fusermount -V'
+ssh mine 'fusermount3 -V'
+ssh mine 'fusermount -V'
+ssh mine
+neofetch
+rclone -V
+fusermount -V
+hostnamectl
+ssh mine 'hostnamectl'
+ssh vps 'hostnamectl'
+cd /lib/modules
+duh
+cd 5.15.0-72-generic/
+ll 5.15.0-71-generic
+ll 5.15.0-70-generic
+cd 5.15.0-70-generic
+sudo bat *
+ssh vps ' modprobe fuse'
+sudo grep fuse *
+cd
+cd /lib/modules
+grep -n fuse 5.15.0-72-generic/*
+grep -n fuse 5.15.0-70-generic/*
+sudo zip 5.15.0-70-generic/
+sudo zip 5.15.0-70-generic/ a.zip
+sudo zip 5.15.0-70-generic
+zip --help
+sudo zip -b 5.15.0-70-generic a.zip
+sudo zip -r 5.15.0-70-generic a.zip
+sudo zip -r a.zip 5.15.0-70-generic
+sudo mv a.zip ~
+cd
+sudo chown andy:andy a.zip 
+ssh mine "ll"
+ssh mine "alias"
+ssh mine
+ssh mine "alias"
+ssh mine "ll"
+ssh mine "history"
+ssh mine "env"
+ssh vps "ll"
+ssh vps "history"
+ssh vps "\history"
+alias
+\ll
+alias
+\ls
+hostnamectl
+alias
+sysinfo
+sys
+vi ~/.bashrc
+source ~/.bashrc
+sysinfo
+ssh vps
+uname -r
+ll /lib/modules
+ll /lib/modules/5.15.0-72-generic/
+ll /lib/modules/5.15.0-72-generic/kernel
+ll /lib/modules/5.15.0-72-generic/kernel/fs
+ll /lib/modules/5.15.0-72-generic/kernel/fs/fuse
+sudo grep fuse /proc/filesystems
+sudo bat /proc/filesystems
+sudo bat /lib/modules/5.15.0-72-generic/kernel/fs/fuse/cuse.ko
+sudo bat /lib/modules/5.15.0-72-generic/kernel/fs/fuse/virtiofs.ko 
+ssh vps
+upd
+upg
+$ sudo apt install fuse
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+The following packages will be REMOVED:
+The following NEW packages will be installed:
+0 upgraded, 2 newly installed, 1 to remove and 0 not upgraded.
+Need to get 117 kB of archives.
+After this operation, 354 kB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+cd /lib/modules
+uname -r
+cd 5.15.0-72-generic/
+ls -al
+uname -r
+alias
+hostnamectl
+sysinfo
+cat /etc/os-release
+cat /etc/os-release | grep PRETTY
+uname -r
+ls -al
+cat /etc/os-release | grep PRETTY;uname -r
+ls -al kernel/fs/fuse
+ls -al /lib/modules/5.15.0-72-generic/kernel/fs/fuse
+ls -al /lib/modules/5.15.0-72-generic
+cat /etc/os-release | grep PRETTY;uname -r
+which pupx
+which pipx
+pipx install "browsr[all]"
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+pipx install "browsr[all]"
+sudo reboot
+pipx install "browsr[all]"
+browsr
+yt https://youtu.be/RVMAwGXe3BY SNL-Sully.mp4
+ytd
+alias
+lt /mnt/nas/web/Media/youtube/
+cd /mnt/nas/web/Media/youtube/
+mv SNL-Sully.mp4 SNL_Sully.mp4
+upd
+upg
+which ffprobe
+cd /mnt/nas/web/downloads/fromrd/willie/
+ffmpeg -i time.flac -ab 196k -map_metadata 0 -id3v2_version 3 time.mp3
+cd /mnt/nas/web/downloads/fromrd/willie/
+ffprobe -loglevel quiet time.mp3
+ffprobe  time.mp3
+ffprobe -loglevel quiet -show_entries format=duration time.mp3
+ffprobe -loglevel quiet -show_entries format=bitrate time.mp3
+ffprobe --help
+ffprobe --help | grep entries
+ffprobe --help | less
+ffprobe -loglevel quiet -show_entries format=duration time.mp3
+ffprobe -loglevel quiet  -show_entries stream=bit_rate time.mp3
+ffmpeg -i time.mp3
+ffmpeg -i time.flac -V2 -map_metadata 0 -id3v2_version 3 time1.mp3
+ffmpeg -i time.flac -V 2 -map_metadata 0 -id3v2_version 3 time1.mp3
+ffmpeg -i time.flac -q:a 2 -map_metadata 0 -id3v2_version 3 time1.mp3
+ffmpeg -i time.mp3
+ffmpeg -i time1.mp3
+ffprobe -loglevel quiet  -show_entries stream=bit_rate time1.mp3
+htop
+upd
+upg
+df -Th
+upd
+upg
+upd
+upg
+sudo reboot
+yt https://youtu.be/3injQgfzAxs GenesisWatcher.mp4
+ytd
+du
+ud
+upd
+upg
+yt https://youtu.be/Wwh5D4mwIQI pgplayslive1.mp4
+yt https://youtu.be/LveARHkcYmk pgplayslive2.mp4
+ytd
+bat ~/.bashrc
+ll /mnt
+ll /mnt/sanjoone/
+ll /mnt/sanjoone/alt
+ll /mnt/sanjoone/alt/archive
+echo '/mnt/sanjoone/alt/archive' >> ~/.bashrc
+vi ~/.bashrc
+source ~/.bashrc
+ta
+upd
+upg
+upd
+upg
+cd scripts/
+python lemmy_migrate.py -c lemmy.txt
+mv lemmy.txt lem1.txt
+cp lem1.txt lem2.txt
+python lemmy_migrate.py -c lem2.txt
+cd scripts/
+python lemmy_migrate.py -c lem2.txt
+upd
+upg
+sudo apt autoremove
+docker pull libreddit/libreddit
+sudo docker pull libreddit/libreddit
+listen
+docker run -d --name libreddit -p 80:8080 libreddit/libreddit
+sudo docker run -d --name libreddit -p 80:8080 libreddit/libreddit
+listen
+sudo docker stop libreddit
+listen
+docker-compose -f ~/docker-compose/docker-compose.yml up -d
+sudo apt install docker-compose
+docker-compose -f ~/docker-compose/docker-compose.yml up -d
+ll scripts/
+ll docker/
+docker-compose -f ~/docker/teddit-compose.yml up -d
+sudo docker-compose -f ~/docker/teddit-compose.yml up -d
+listen
+alias
+listen
+duh
+ll docker
+sudo docker-compose stop 
+listen
+docker -h
+docker ps
+redo
+sudo docker image
+sudo docker images
+sudo docker prune
+sudo docker image prune
+docker --help
+sudo docker container
+sudo docker container prune
+sudo docker-compose stop teddit 
+sudo docker-compose ~/docker/teddit-compose.yml stop 
+sudo docker-compose -f ~/docker/teddit-compose.yml stop 
+cd docker/
+mkdir compose
+mv teddit-compose.yml compose/
+cd compose/
+mv teddit-compose.yml teddit.yml
+touch yacht.yml
+listen
+sudo docker-compose -f ~/docker/compose/yacht.yml up -d
+listen
+mv teddit-compose.yml teddit.yml
+sudo docker-compose -f ~/docker/compose/teddit.yml up -d
+sudo docker system prune -a
+htop
+sudo docker system prune -a
+listen
+sudo docker-compose -f ~/docker/compose/teddit.yml up -d
+listen
+ta
+hr
+alias
+yt https://youtu.be/_6Y52JHN-LA AirportSecurity1.mp4
+yt https://youtu.be/WA_RamRRS5o AirportSecurity2.mp4
+yt https://youtu.be/cVsQLlk-T0s MoreCowbell.mp4
+ytd
+yt https://youtu.be/jWNEr4eHL18 PlayingBiko.mp4
+ytd
+upd
+upg
+sudo reboot
+upd
+upg
+listen
+sudo docker-compose -f ~/docker/compose/teddit.yml up -d
+listen
+yt https://youtu.be/ph1GU1qQ1zQ Playing-TheWeight.mp4
+ytd
+ll ~/Downloads/complete/
+yt https://youtu.be/Nv7Ts4v5_Bs TightPants1.mp4
+ll ~/Downloads/complete/
+yt https://youtu.be/MLUvOtqTmYM TightPants2.mp4
+ll ~/Downloads/complete/
+yt https://youtu.be/-qdNy_vz-gM TightPants3.mp4
+ytd
+yt https://youtu.be/j3VN54M1OXA Convoy.mp4
+yt https://youtu.be/6sFyRQPraJ8 SoManyRoads.mp4
+yt https://youtu.be/1DTwLqR071M BobDoug12days.mp4
+yt https://youtu.be/8Jm4LoOaAWI BobDougTakeOff.mp4
+yt https://youtu.be/Wl0oLGrx9Dw FallonAfro.mp4
+yt https://youtu.be/ynKqgo-x780 FallonFunFun.mp4
+yt https://youtu.be/1rVNzu7smmw FallonRock.mp4
+yt https://youtu.be/KBluUZ4NnZg GoldenLovesMusic.mp4
+yt https://youtu.be/8b0GNIM3SCc BelgianReindeer.mp4
+yt https://youtu.be/7dlN55SoF4Q TownshendRealMe.mp4
+yt https://youtu.be/dssTMapz9UM TownshendImOne.mp4
+ll ~/Downloads/complete/
+ytd
+ll ~/Downloads/complete/
+yt https://youtu.be/2t9slqL_eSw TownshendDrowned1979.mp4
+yt https://youtu.be/cpjwE1_IJUw TownshendDrowned.mp4
+yt https://youtu.be/c4d1xFd5ywU FallonTensions.mp4
+yt https://youtu.be/oPpzJAzdpTU KeyPeeleKitchen.mp4
+yt https://youtu.be/cycKvOwKJZw FallonNeilYoung.mp4
+yt https://youtu.be/xnRwQjTYfGI EastBoundDown.mp4
+yt https://youtu.be/yYf2yFD-iIk ColbertNutmeg.mp4
+yt https://youtu.be/5wTVLIZaxMk KnopflerAtkins.mp4
+ll ~/Downloads/complete/
+ytd
+yt https://youtube.com/playlist?list=PLMfrVlnR9midZQ73urxRakrs0zLoaX-BK 
+ll ~/Downloads/complete/
+ytd
+yt https://youtu.be/9S4cldkdCjE GhostBustersMassHysteria.mp4
+yt https://youtube.com/playlist?list=PLMfrVlnR9mieD5keWqmspj7dmBpYSUfMR
+ll ~/Downloads/complete/
+ytd
+ll ~/Downloads/complete/
+yt https://youtu.be/Dn2PU2uUhbY FallonTwoJamesTaylors.mp4
+ll ~/Downloads/complete/
+yt https://youtu.be/44b_Xr0fNwQ CarpetCrawlers.mp4
+ytd
+yt https://youtu.be/QVyfj7-mHqs SuppersReady.mp4
+yt https://youtu.be/-GXQTEtAc1w GenesisMusicBox.mp4
+ytd
+cd /mnt
+cd sanjoone
+cd music
+cd Mellencamp\,\ John/
+upd
+ta
+upg
+hr
+hgrep lem
+python lemmy_migrate.py -c lem.txt
+ll scripts/
+python ~/lemmy_migrate.py -c lem.txt
+python ~/scripts/lemmy_migrate.py -c lem.txt
+python ~/scripts/lemmy_migrate.py -c ~/scripts/lem.txt
+ta
+python ~/scripts/lemmy_migrate.py -c ~/scripts/lem.txt
+listen
+upd
+upg
+listen
+sudo docker run -it -p "8090:8080" ghcr.io/rystaf/mlmym:latest
+listen
+hgrep docker
+sudo docker run -d --name mlmym -p "8090:8080" ghcr.io/rystaf/mlmym:latest
+listen
+upd
+ta
+upg
+ta
+upd
+upg
+vi ~/.ssh/config 
+ssh vps
+listen
+sudo docker run --name openplayground -p 5432:5432 -d --volume openplayground:/web/config natorg/openplayground
+listen
+upd
+upg
+grep sudo
+hgrep sudo
+sudo reboot
+listen
+sudo docker run --name space-1 -d -p 8020-8040:8020-8040 --restart=always alnoda/alnoda-workspace
+listen
+sudo docker stop space-1
+listen
+sudo docker run --name alnoda -d -p 8020-8040:8020-8040 --restart=always -e WRK_HOST=192.168.1.6 alnoda/alnoda-workspace
+listen
+sudo docker stop alnoda
+listen
+hgrep kasm
+hgrep yacht
+hgrep kasm
+hgrep yacht
+listen
+sudo docker stop yacht
+listen
+ssh mine
+listen
+sudo docker volume create portainer_data
+sudo docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+listen
+upd
+sudo apt install snapd
+sudo apt autoremove
+sudo reboot
+upd
+upg
+sudo snap install remmina
+listen
+sudo snap connect remmina:avahi-observe :avahi-observe
+sudo snap connect remmina:cups-control :cups-control
+sudo snap connect remmina:mount-observe :mount-observe
+sudo snap connect remmina:password-manager-service :password-manager-service
+snap connect remmina:audio-playback :audio-playback
+sudo snap connect remmina:audio-playback :audio-playback
+snap connect remmina:audio-record :audio-record
+redo
+listen
+remmina&
+sten
+listen
+remmina&
+listen
+ll ~/Downloads/complete/
+yt https://youtu.be/7UE_I_yjEhA?si=J3uPwDUUmSaOMNC4 ConanMartinShort.mp4
+yt https://youtu.be/7UE_I_yjEhA ConanMartinShort.mp4
+hgrep yt
+yt https://youtu.be/7UE_I_yjEhA ConanMartinShort.mp4
+yt-dlp -F https://youtu.be/7UE_I_yjEhA?si=0jT_JlGNW8nIZ0xL
+hgrep yt-dlp
+upd
+which yt-dlp
+yt-dlp --help
+yt
+yt-dlp -U
+hgrep pip
+python3 -m pip install -U yt-dlp
+yt https://youtu.be/7UE_I_yjEhA ConanMartinShort.mp4
+ll ~/Downloads/complete/
+cd ~/Downloads/complete/
+rm *ytdl
+rm *part
+yt https://youtu.be/nToudeVmJ18?si=9pmb4ZDVFEkqXlfV JohnStamos.mp4
+yt https://youtu.be/vEjnmgVnxKs?si=Jdh5ROn-6GiDJzku Rebecca3.mp4
+yt https://youtu.be/zwnFeY1_sPA?si=_yJTiccBwKQtf9iW Rebecca1.mp4
+yt https://youtu.be/ty4PhRWt1hU Nicole.mp4
+yt https://youtu.be/voeoQq4864c?si=-Q2JKjHI0LsGpmTm Nina.mp4
+ytd
+yt https://youtu.be/eSfoF6MhgLA?si=WlhT2RQZvZkPkWbO FckingMattDamon.mp4
+yt https://youtu.be/TwIyLHsk2h4?si=ep0alZlouTobb4XK FckingBenAffleck.mp4
+ytd
+alias
+ll ~/Downloads/complete/
+yt https://youtu.be/CXDxNCzUspM?si=6qTF6wkVo1A0sg0D test.mp4
+yta
+ll ~/Downloads/complete/
+yta
+yt-dlp -F https://youtu.be/zx8_Pumdkpg?si=alSQEhC652X1NB3N
+cd ~/Downloads/complete/
+yt-dlp -f 229 https://youtu.be/zx8_Pumdkpg?si=alSQEhC652X1NB3N
+ytd
+upd
+upg
+sudo reboot
+cd ~/Downloads/complete/
+yt-dlp -F https://youtu.be/zx8_Pumdkpg?si=alSQEhC652X1NB3N
+yt-dlp -f 22 https://youtu.be/zx8_Pumdkpg?si=alSQEhC652X1NB3N
+ytd
+upd
+upg
+upd
+ta
+upg
+upd
+upg
+sudo reboot
+curl https://getconnected.southwestwifi.com/current.json
+curl https://southwest.com/wifi/current.json
+curl http://southwest.com/wifi/current.json
+upd
+upg
+nmap -sn 192.168.1.1-5
+nmap -sP 192.168.1.1-5
+man nmap
+curl
+vi .history
+ytd https://youtu.be/uqb1yn8kt00 SteveGoodman.mp4
+hgrep ytd
+alis
+alias
+yt https://youtu.be/uqb1yn8kt00 SteveGoodman.mp4
+ytd
+upd
+upg
+yt https://youtu.be/f37IhmRwIMA?si=5D-tuLnQ0qbJgwih Storytellers.mp4
+yt https://youtu.be/IwFoyh_JpsY?si=uyDkoPHeZnY9AlKg Andes1972.mp4
+ytd
+sudo reboot
+upd
+upg
+hgrep mot
+sudo run-parts /etc/update-motd.d
+listen
+alias
+tree
+tree -V
+tree -help
+tree --help
+tree --version
+tree -d
+man tree
+ssh mine
+ll ~/Downloads/complete/
+alias
+yta
+ll ~/Downloads/complete/
+vi ~/.history
+yta
+alias
+ll /mnt/sanjoone/alt/archive
+cd /mnt/sanjoone/alt/archive
+mv Massage\ Rooms\ Rita\[3895724\].mp4 Rita1.mp4
+mv Massage\ Rooms\ Rita\[3895844\].mp4 Rita2.mp4
+mv Massage\ Rooms\ Rita\[4397238\].mp4 Rita3.mp4
+mv Massage\ Rooms\ Rita\[4397309\].mp4 Rita4.mp4
+mv Massage\ Rooms\ Rita\[4679677\].mp4 Rita5.mp4
+mv Massage\ Rooms\ Chloe\ Lamour\[50901173\].mp4 ChloeLamour1.mp4
+mv Thai\ massage\[30153803\].mp4 Thai1.mp4
+mv Thai\ massage\[43011273\].mp4 Thai2.mp4
+mv Thai\ massage\[60060397\].mp4 Thai3.mp4
+mv Nuru.Massage.The.Next.Big.Thing.Gabi.Paltrova.mp4 GabiPaltrova1.mp4
+mv Jynx\ Maze\ Serves\ Fresh\ Lemonade\[58897833\].mp4 JynxMazeLemonade.mp4
+mv Jinx\ Maze\ in\ the\ car\[59732875\].mp4 JinxMazeCar.mp4
+mv Anissa\ Kate\ -\ POV\ \[48322933\].mp4 AnnisaKate1.mp4
+mv Annissa\ Kate\[41023747\].mp4 AnnisaKate2.mp4
+mv Annissa\ Kate\ POV\[52067911\].mp4 AnnissaKate3.mp4
+mv Nuru.Massage.Eve.Marlowe.mp4 EveMarlowe1.mp4
+mv Nuru\[11985647\].mp4 Nuru1.mp4
+mv Nuru\[32194059\].mp4 Nuru2.mp4
+mv JinxMazeCar.mp4 JynxMazeCar.mp4
+yt https://youtu.be/sH-gmuJlU98?si=0VfT0lka1sbvVQTq Andes50yearsLater.mp4
+ll ~/Downloads/complete/
+ytd
+yt https://youtu.be/e1fn6jeov5w?si=C_96onvhuETk7Jpl RouteGoogleMap.mp4
+ytd
+yt https://youtu.be/skrPS4icHrc?si=KAh7_2RQEF_ioiB4 a.mp4
+ll ~/Downloads/complete/
+cd ~/Downloads/complete/
+rm a.mp4 
+yt https://m.youtube.com/playlist?list=PLMfrVlnR9miezIXMo2KFM5WKFnHL9uy7c
+yt https://www.youtube.com/playlist?list=PLMfrVlnR9miezIXMo2KFM5WKFnHL9uy7c
+ta
+yt https://m.youtube.com/playlist?list=PLMfrVlnR9miezIXMo2KFM5WKFnHL9uy7c
+ta
+ytd
+ll ~/Downloads/complete/
+yt https://youtu.be/skrPS4icHrc?si=Aoy5OukI42JReIjd Alpine2018.mp4
+ytd
+yt https://youtu.be/JDQrcsMAuwU?si=ld63wr5BK-rTkTIQ uc-eyes.mp4
+ll ~/Downloads/complete/
+yt https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo ucgive.mp4
+rm *
+yt-dlp -F https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo
+yt-dlp -f 625 https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo
+mv Don\'t\ Give\ up\ -\ 9⧸30⧸2023\ -\ Peter\ Gabriel\!\!\!\!\ Live\ in\ concert\ at\ United\ Center\,\ Chicago\ Illinois\ \[jyRd4nOqpgo\].mp4 uc-dont.mp4
+yt-dlp -F https://youtu.be/JDQrcsMAuwU?si=ld63wr5BK-rTkTIQ
+yt-dlp -F https://youtu.be/JDQrcsMAuwU?si=ld63wr5BK-rTkTIQ | grep mp4
+yt-dlp -F 623 https://youtu.be/JDQrcsMAuwU?si=ld63wr5BK-rTkTIQ
+alias
+cat ~/.bashrc | grep yt
+yt-dlp -o uceyes.mp4 -f 623 https://youtu.be/JDQrcsMAuwU?si=ld63wr5BK-rTkTIQ
+ffprobe uc-dont.mp4 
+man ffprobe
+ffprobe uc-dont.mp4 -hide_banner
+declare -f yt
+yt
+https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo
+yt https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo g.mp4
+rm g*
+ffprobe -hide_banner *
+ffprobe -hide_banner uceyes.mp4 
+ffprobe -hide_banner uceyes.mp4 | grep tream
+ffprobe  uceyes.mp4 | grep tream
+ffprobe  uceyes.mp4 | grep kb
+yt-dlp -F https://youtu.be/jyRd4nOqpgo?si=8NUR2ZMtUxhPGOGo | grep mp4
+yt-dlp -F https://youtu.be/jyRd4nOqpgo
+yt-dlp -o e.mp4 -f 642 https://youtu.be/jyRd4nOqpgo
+ta
+ffprobe -hide_banner e.mp4 
+ffprobe -hide_banner uc-dont.mp4 
+ffprobe -hide_banner e.mp4 
+rm e.mp4 
+yt-dlp -F https://youtu.be/FC8tBTW3h3c?si=iSsxySjZjDDQOR97
+yt-dlp -o ucredrain.mp4 -f 625 https://youtu.be/FC8tBTW3h3c?si=iSsxySjZjDDQOR97
+ffprobe -hide_banner ucredrain.mp4 
+yt-dlp -F https://youtu.be/fdecYepBUfY?si=atVfcy1VLUVmFwzR
+yt-dlp -o ucsols.mp4-f 625 https://youtu.be/fdecYepBUfY?si=atVfcy1VLUVmFwzR
+yt-dlp -o ucsols.mp4 -f 625 https://youtu.be/fdecYepBUfY?si=atVfcy1VLUVmFwzR
+ffprobe -hide_banner ucsols.mp4 
+yt-dlp -o ucsled.mp4 -f 625 https://youtu.be/QNmKLI0rNio?si=iHAXQsgJXe2ZsFg8
+ffprobe -hide_banner ucsled.mp4 
+ytd
+upd
+upg
+sudo reboot
+cd ~/Downloads/complete/
+yt https://youtu.be/yM7fS4uwNkQ?si=NE2jR5nwe6yyzlIO solsbury.mp4
+yt https://youtu.be/spXKyzWC8sY?si=-PVzxhWmHjplIl8F eyes.mp4
+yt https://youtu.be/WC2xtUvmang?si=MLLYmZEXbXhaWZVZ sledgehammer.mp4
+yt https://youtu.be/QrbzWl0wbFc?si=MNNQ39Ng1gnsDsID redrain.mp4
+yt https://youtu.be/kByfiTbYsgQ?si=ZBa3shu7ZJx7kOOj dontgiveup.mp4
+yt https://youtu.be/MUqOqne1hUc?si=6DhY_updWC29YrF6 biko.mp4
+ytd
+ta
+cd ~/Downloads/complete/
+yta
+upd
+upg
+ll ~/Downloads/complete/
+yt https://youtu.be/ZE4kKVA4kk8?si=jBOGgtLJlBfNuhJN JCStorytellers.mp4
+ll ~/Downloads/complete/
+ytd
+hgrep cockpit
+systemctl enable --now cockpit.socket
+sudo systemctl enable --now cockpit.socket
+ll ~/Downloads/complete/
+yt https://youtu.be/wVgOVwdRTFI?si=aWnuqWTPYtJonKzD sledgehammer.mp4
+cd ~/Downloads/complete/
+yt https://youtu.be/BkUCJG5QIiI?si=fvw8IFmcikqGki2n dontgiveup.mp4
+yt https://youtu.be/l_KQjixoBi8?si=wvbZJ11XU3ggqljw redrain.mp4
+yt https://youtu.be/CVtTYblCBEE?si=ZDIlAaxGWeZo0DVN redrain.mp4
+yt https://youtu.be/CVtTYblCBEE?si=ZDIlAaxGWeZo0DVN bigtime.mp4
+yt https://youtu.be/M5EpR0JPXko?si=qVXz6NGXWIqJWtZh solsbury.mp4
+yt https://youtu.be/M5_iNGm00Tc?si=QDEEHmyl75hzBqi5 inyoureyes.mp4
+yt https://youtu.be/BnbI65FGSJo?si=x8crFPGrR0MIcSP3 biko.mp4
+alias
+ffph
+hgrep ffprobe
+vi ~/.bashrc
+source ~/.bashrc
+ffph inyoureyes.mp4 
+yt-dlp -F https://youtu.be/BnbI65FGSJo?si=x8crFPGrR0MIcSP3
+ffph biko.mp4 
+alias
+type yt
+yt
+yt https://youtu.be/BnbI65FGSJo?si=x8crFPGrR0MIcSP3 test.mp4
+rm test.mp4 
+ytd
+yt https://youtu.be/uZNa09JTiZE?si=YyAzWKT6eWNV8dru sledgehammer.mp4
+yt-dlp -F https://youtu.be/uZNa09JTiZE?si=YyAzWKT6eWNV8dru | grep mp4
+yt https://youtu.be/kdvw3f1Nw98?si=-0hA0iRmoraYI462 bigtime.mp4
+yt https://youtu.be/B6P2_qRrxZU?si=b-b-omZz9WFCt9BR roadtojoy.mp4
+yt https://youtu.be/Tc-XF4lgDDo?si=wivc6bo3d7mjC0AQ dontgiveup.mp4
+yt https://youtu.be/ICZcieFsG8g?si=V40wpFjBGKxwjURO solsbury.mp4
+yt https://youtu.be/5kATvsD-ws4?si=cdMibKCmvneVIne0 biko.mp4
+yt https://youtu.be/YnncbbqrUUI?si=iuHXMNflDZuq3CuU seattle.mp4
+ytd
+cd ~/Downloads/complete/
+yt https://youtu.be/J2qn8lJKzQc?si=XOTDuKashG3yMWB5 sol.mp4
+yt https://youtu.be/bIkdffKz8fk?si=CDKeKE7xdEnu0c9p redrain.mp4
+yt https://youtu.be/Te2LbQSB6io?si=GRPoAaS3qgSOXUYv biko.mp4
+yt https://youtu.be/1uVCyObeKhc?si=86f0qm9zJ27Q-TZr inyoureyes.mp4
+ytd
+hgrep redrain
+yt https://youtu.be/JDQrcsMAuwU eyes.mp4
+rm *
+yt-dlp -F https://youtu.be/JDQrcsMAuwU?si=VursTPtRvVJzroAj
+hgrep ucred
+hgrep uceyes
+hgrep eyes
+cd ~/Downloads/complete/
+yt https://youtu.be/x64E_cosY3o?si=IRf2fDQZkXKjDPxU IO_20231011_SanFran.mp4
+ytd
+cd ~/Downloads/complete/
+yt https://youtu.be/P1CLW3bYjm8?si=cuxdyjGChgeKPiHK IO_20230920.mp4
+ytd
+which egrep
+yt-dlp -F https://youtu.be/P1CLW3bYjm8?si=cuxdyjGChgeKPiHK | egrep "617|140"
+yt-dlp -F https://youtu.be/P1CLW3bYjm8?si=cuxdyjGChgeKPiHK | grep 617
+cd ~/Downloads/complete/
+yt https://youtu.be/3UIllK7emZc?si=iG1qXoS3rVopm8Oa GrowinUp.mp4
+yt-dlp -F https://youtu.be/3UIllK7emZc?si=iG1qXoS3rVopm8Oa
+ytd
+ll ~/Downloads/complete/
+yt https://youtu.be/YE2LZN8ayVw?si=auFBfJS65Wk4wQES bttf2015.mp4
+ytd
+upd
+upg
+sudo reboot
+sudo systemctl enable cockpit.socket
+listen
+yt https://youtu.be/627aciBA2E8 WizardOfFloyd.mp4
+ll ~/Downloads/complete/
+ytd
+ta
+yt https://youtu.be/YAiB85jJYT8?si=kKypSuZs9YrENTet PeterGabrielVoice.mp4
+ytd
+upd
+upg
+yt https://youtu.be/YFWzvpWhrZE?si=vL5JhK-O8uSBE_Yg PGOperaLove.mp4
+cd ~/Downloads/complete/
+rm PGOperaLove.mp4 
+yt-dlp -F https://youtu.be/YFWzvpWhrZE?si=vL5JhK-O8uSBE_Yg
+yt-dlp -F https://youtu.be/YFWzvpWhrZE?si=vL5JhK-O8uSBE_Yg | grep mp4
+yt-dlp -f 614 https://youtu.be/YFWzvpWhrZE
+mv Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].mp4 pg.mp4
+ytd
+yt-dlp -f 137 https://youtu.be/YFWzvpWhrZE
+mv Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].mp4 ppg.mp4
+ytd
+yt-dlp -f 270 https://youtu.be/YFWzvpWhrZE
+mv Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].mp4 pppg.mp4
+ytd
+yt-dlp -F https://youtu.be/YFWzvpWhrZE?si=vL5JhK-O8uSBE_Yg
+type ytd
+type yt
+yt-dlp -f 'bestvideo[height<=480]+bestaudio/best[height<=480]' 
+yt-dlp -f 'bestvideo[height<=1200]+bestaudio/best[height<=1200]' 
+yt-dlp -f 'bestvideo[height<=1200]+bestaudio/best[height<=1200]' https://youtu.be/YFWzvpWhrZE
+type yt | best
+type yt | grep best
+yt-dlp -f 'bestvideo[height<=1200]+bestaudio/best[height<=1200]/best[ext=mp4]/best' https://youtu.be/YFWzvpWhrZE
+rm Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].webm 
+yt-dlp -f 'bestvideo[height<=1200]+bestaudio/best[height<=1200]/best[ext=mp4]/best' https://youtu.be/YFWzvpWhrZE
+yt-dlp -F https://youtu.be/YFWzvpWhrZE?si=vL5JhK-O8uSBE_Yg
+mv Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].webm 
+yt-dlp -f 'wv[height<=1200]+wa/worst[height<=1200]' https://youtu.be/YFWzvpWhrZE
+rm *
+yt-dlp -f 'wv[height>=1000]+wa/worst[height>=1000]' https://youtu.be/YFWzvpWhrZE
+mv Vocal\ ANALYSIS\ of\ ＂Solsbury\ Hill＂\ by\ Opera\ Singer\ ⧸\ Voice\ Coach\ \[YFWzvpWhrZE\].mp4 pg.mp4
+ytd
+upd
+upg
+hgrep dlp
+which yt-dlp
+yt-dlp -H
+yt-dlp -U
+hgrep python
+python3 -m pip install -U yt-dlp
+yt-dlp -U
+cowsay -f ghostbusters $(date +%s)
+sudo apt install cowsay
+cowsay -f ghostbusters $(date +%s)
+cowsay -h
+man cowsay
+cowsay -l
+cowsay $(date +%s) -f wqw
+cowsay $(date +%s) -f www
+cowsay $(date +%s) -f tux
+cowsay -f tux $(date +%s)
+cowsay -f tux rest
+cowsay -f www rest
+yt https://youtu.be/ygZZ5vYi-0U?si=kssBzTaoNsC0UCzP LogicalSong.mp4
+ll ~/Downloads/complete/
+ytd
+upd
+upg
+ll ~/Downloads/complete/
+yt-dlp -f 'wv[height>=1000]+wa/worst[height>=1000]' https://youtu.be/fTjh5k2ixR4
+ll *mp4
+mv *mp4 paradise.mp4
+type ytd
+mv paradise.mp4 /mnt/nas/web/Media/youtube/Paradise.mp4
+upd
+upg
+type yt
+cd ~/Downloads/complete/
+yt-dlp -o ~/Downloads/complete/Logical.mp4 -f 'wv[height>=1000]+wa/worst[height>=1000]' https://youtu.be/ygZZ5vYi-0U
+ytd
+ta
+which ffmpeg
+ffmpeg -V
+hgrep ffmpeg
+cd /usr/bin
+upd
+upg
+which ffpobe
+which ffprobe
+ffprobe
+sudo reboot
+ffmpeg -hide_banner -loglevel error
+ffmpeg -hide_banner
+ffmpeg -loglevel error
+ffmpeg
+man ffmpeg
+upd
+upg
+df -Th
+cd /mnt/nas/web/Media/Movies/
+cd /mnt/nas/web/Media/Movies/NtoZ/
+ll *tap*
+hgrep ffprobe
+ffprobe -hide_banner This\ Is\ Spinal\ Tap\ \(1984\)x265.mkv 
+cat ~/.ssh/config 
+cd ~/.ssh
+cat id_rsa.pub 
+cat authorized_keys 
+cd /mnt/nas/web
+cd downloads/fromrd/
+cd spinaltap/
+ffprobe -hide_banner This.is.Spinal.Tap.mkv 
+hgrep conf
+hgrep .conf
+hgrep rclone.conf
+sudo cat /root/.config/rclone/rclone.conf
+upd
+upg
+hgrep rclone.conf
+hgrep service
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+ll /mnt
+hgrep rclone
+hgrep restart
+rclone rclonesanjosanjo
+hgrep rclonesanjosanjo
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+sudo cat /etc/systemd/system/rclone*
+ll /etc/systemd/system/rclone*
+listen
+ports
+hgrep service
+systemctl list-unit-files --type service
+ll /mnt
+ll /mnt/sanjosanjo
+ll /mnt/sanjoone
+cd .config
+cd rclone
+cat rclone.conf 
+vi rclone.conf 
+cat rclone.conf 
+rclone ls sanjosanjo
+rclone ls sanjosanjo:drive
+sudo cat /etc/systemd/system/rclonesanjoone.service 
+sudo cat /etc/systemd/system/rclonesanjoone.service > /mnt/d/rclonesanjoone.service.txt
+rclone ls sanjoone:drive
+rclone ls sanjoone:
+rclone lsd sanjoone:
+rclone lsd workpc:
+rclone lsd sanjosanjo:
+rclone config reconnect sanjosanjo
+rclone -V
+cd
+rclone config reconnect sanjosanjo
+rclone lsf sanjoone:
+rclone lsd sanjoone:
+rclone lsl --max-depth 1 sanjoone:
+rclone ls --max-depth 1 sanjoone:
+rclone lsd sanjoone:alt
+rclone lsd sanjoone:alt:archive
+rclone lsd sanjoone:alt/archive
+rclone lsd sanjoone:bak
+rclone lsd sanjoone:bak/office
+rclone config reconnect sanjosanjo
+rclone config reconnect sanjosanjo:
+which rclone
+rclone -V
+ll go
+cd go
+ll bin
+ll pkg
+cd
+hgrep rclone | less
+cat .config/rclone/rclone.conf 
+vi .config/rclone/rclone.conf 
+rclone lsd sanjoone:
+ll /mnt
+cd /etc/systemd/system
+cp rclonesanjoone.service rclonesanjosanjo.service
+sudo cp rclonesanjoone.service rclonesanjosanjo.service
+sudo vi rclonesanjosanjo.service 
+sudo chmod 664 rclonesanjosanjo.service 
+hgrep rclone
+hgrep systemctl
+sudo systemctl start rclonesanjosanjo
+sudo systemctl enable rclonesanjosanjo
+sudo systemctl start rclonesanjosanjo
+ll /mnt
+ll /mnt/sanjosanjo
+ll /mnt/sanjoone
+systemctl list-unit-files --type service
+sudo systemctl restart rclonesanjosanjo
+ll /mnt/sanjosanjo
+cd
+ll /mnt/sanjoone
+ll ~/Downloads/complete/
+yta
+ll ~/Downloads/complete/
+upd
+upg
+ll /mnt/sanjosanjo
+ll /mnt/sanjoone
+systemctl list-unit-files --type service
+sudo systemctl restart rclonesanjosanjo
+ll /mnt/sanjosanjo
+ll /mnt
+df -h
+rclone lsd sanjosanjo:
+rclone lsd sanjoone:
+hr
+sudo cat /etc/systemd/system/rclonesanjosanjo.service 
+tail /var/log/rclone.log
+sudo tail /var/log/rclone.log
+ll /var/log
+sudo vi /etc/systemd/system/rclonesanjosanjo.service 
+sudo systemctl restart rclonesanjosanjo
+systemctl daemon-reload
+sudo systemctl restart rclonesanjosanjo
+ll /var/log
+sudo tail /var/log/rclone-sanjosanjo.log 
+ll ~/Downloads/complete/
+yt http://welcometoiowastate.net/admit/index.php?fname=Cassandra&lname=Khan isu.mp4
+ll ~/Downloads/complete/
+yt http://welcometoiowastate.net/smarty/templates/_mobile/restored/8ed55cd5409b690450b53f773afd542b.mp4 isu.mp4
+ll ~/Downloads/complete/
+ytd
+upd
+upg
+ll ~/Downloads/complete/
+head ~/.bashrc
+upd
+upg
+upd
+upg
+sudo reboot
+sudo apt install nala
+alias
+sudo nala update
+sudo nala update && nala list --upgradable
+alias
+sudo nala upgrade
+sudo nala upgrade -y
+vi ~/.bashrc
+upd
+source ~/.bashrc
+upd
+upg
+nala history
+nala history info
+nala history info 1
+sudo nala fetch
+upd
+sudo nala fetch
+upd
+upg
+ping 1.1.1.1
+ping 1.1
+ping 192.168.1
+dig 1.1.1.1
+dig 1.1
+ping 127.0.0.1
+whois 1.1.1.1
+sudo nala install whois
+upd
+upg
+whois 1.1.1.1
+whois 1.1
+dig 1.1
+dig 1.1.1.1
+dig googlecom
+dig google.com
+dig 1.1.1.1
+dig 1.1
+curl 1.1.1.1
+curl 1.1
+dig 1.1 any
+dig 1.1.1.1 any
+dig -x 1.1.1.1
+dig -x 1.1
+dig +noall -x 1.1
+dig +noall +answer -x 1.1
+dig +noall +answer -x 1.1.1.1
+dig -x 1.1
+dig -x 1.1
+dig -x 1.1.1.1
+dig -x 1.1
+dig 1.1
+dig 1.1.1.1
+dig -x 1.1
+dig -x 1.1.1.1
+dig -x 1.1
+dig -x 1.1.1.1
+dig +noall +answer -x 1.1.1.1
+dig +noall +answer -x 1.1
+dig +noall +answer -x 8.8.8.8
+ping 134744072
+upd
+upg
+upd
+upg
+powertop
+sudo nala install powertop
+powertop
+sudo powertop
+hgrep nala
+nala history
+nala history info
+nala history info 1
+nala history info 5
+nala history info 4
+vi ~/.ssh/authorized_keys 
+cd .ssh
+cat config
+vi confi
+rm .confi.swp 
+vi config
+ssh nerd
+cat config
+cat authorized_keys 
+mkdir -p ~/.ssh;
+chmod 700 ~/.ssh;
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYU/L+oHCmZokoT7nk04PImEFB6ZIzHxTmQTHx5MmnvtfZrns6JlGH/JjbbXIcGOQc8DEGJLD+h6TlTc8DMXQLDtDx/YdeR/gRxBpcf/hL5ApGAMJS6xvnHGgxRJRe3JSAIZgprHRDfg6wQ4oKxc4OP7rUpUq6xAua8Az259rOkuPX2Bej315la5cdRoes9c5II8Qw879qW5SsPpA2OmEZjq8yblmQF+qBScI7m1gepTEKuUdPTLnYgFRS1dkfddQLXH/8XpNQbRUvlHBefaLAs4mb/28jd17D/61HmwV+KQjlyWuISpb2l7Z3sDjb0jKuNWhcG9P777BA0Ry6D57B JuiceSSH " >> ~/.ssh/authorized_keys;
+chmod 600 ~/.ssh/authorized_keys;
+cat ~/.ssh/authorized_keys 
+upd
+upg
+ssh nerd
+cat ~/.ssh/authorized_keys 
+ssh mine
+ssh nerd
+ll .local
+ll .local/bin
+ssh root@107.174.250.240
+ssh nerd
+hgrep mot
+sudo run-parts /etc/update-motd.d
+ssh nerd "sudo run-parts /etc/update-motd.d"
+scp .history andy@nerd:historybee
+alias
+notes
+alias
+cd git
+cd linux
+cat ~/.bashrc
+grep git ~/.bashrc
+git -C ~/git/linux push
+cd git/linux/vps/
+cd .ssh/
+rm id_rsa
+git -C ~/git/linux push
+git -C ~/git/linux merge
+git fetch
+git push
+git commit
+git commit -a
+git commit
+git push
+git commit
+vi unix_notes.txt 
+git commit -a
+git push
+mkdir bee
+mkdir wsl
+mv .ba* wsl
+mv check_mounts.sh wsl
+cat .inputrc 
+git commit -a && git push
+git add .
+git commit -a
+git push
+cd
+cat .bash_logout 
