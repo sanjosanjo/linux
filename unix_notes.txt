@@ -1,3 +1,5 @@
+!$ last argument in the previous history command
+
 --------------------- viewing -------------------------
 less +G filename		displays the file in less, starting at bottom.  when using less use G to go to the bottom (same as vim)
 tac						reverse of cat
