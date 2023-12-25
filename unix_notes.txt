@@ -1,5 +1,9 @@
 !$ last argument in the previous history command
 
+----- git -----
+git commit -a		commit with file deletions
+git push		push changes to remote repo
+
 --------------------- viewing -------------------------
 less +G filename		displays the file in less, starting at bottom.  when using less use G to go to the bottom (same as vim)
 tac						reverse of cat
