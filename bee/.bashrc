@@ -74,6 +74,7 @@ alias upg='sudo nala upgrade -y'
 #alias upg='sudo apt upgrade -y'
 alias yta='mv ~/Downloads/complete/* /mnt/sanjoone/alt/archive/'
 alias ffph='ffprobe -hide_banner '
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 # a function to download Youtube videos to the ~/Downloads/complete/ folder
 function yt {
 # Display usage information if no arguments are provided
