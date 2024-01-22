@@ -50,6 +50,7 @@ alias mountall='sudo mount -t drvfs P: /mnt/p; sudo mount -t drvfs H: /mnt/h; su
 alias ncdux='ncdu --exclude='/var/www/html/drivemusic/*''
 alias dux='du --exclude='/var/www/html/drivemusic/*''
 alias serv='systemctl list-unit-files --type service -all'
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
